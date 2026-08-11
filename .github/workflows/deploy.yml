@@ -1,16 +1,17 @@
-name: Update Market Data
+name: Update and Deploy Market Heat Dashboard
 
 on:
   schedule:
-    # Run at minute 17 of every hour to avoid GitHub Actions queue delays
     - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  update-data:
+  update-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -31,7 +32,7 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python fetch_data.py
 
-      - name: Commit and Push if Changed
+      - name: Commit Updated data.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -39,13 +40,18 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in data.json"
           else
-            git commit -m "Auto-update market data [skip ci]"
+            git commit -m "Auto-update market data"
             git push
           fi
 
-      - name: Trigger Deploy Workflow
-        if: success()
-        run: |
-          gh workflow run deploy.yml --ref main
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
