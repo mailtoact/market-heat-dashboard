@@ -1,41 +1,111 @@
 {
-  "updated": "2026-08-11T01:00:00+00:00",
-  "score": 42,
+  "updated": "2026-08-11T03:25:52.132424+00:00",
+  "score": 48,
+  "dataHealth": {
+    "live": 1,
+    "total": 9,
+    "status": "yellow",
+    "sources": {
+      "DGS2": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "DGS10": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "DGS20": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "DGS30": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "DCOILWTICO": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "UNRATE": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "BAMLH0A0HYM2": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "BAMLC0A0CM": {
+        "source": "FRED",
+        "ok": false,
+        "observations": 0,
+        "last_date": null,
+        "error": "No observations returned"
+      },
+      "DXY": {
+        "source": "Yahoo Finance",
+        "ok": true,
+        "observations": 656,
+        "last_date": "2026-08-11",
+        "error": null
+      }
+    }
+  },
   "accent": "#f5c451",
   "regime": "\ud83d\udfe1 Elevated \u2014 Watch",
-  "regimeDesc": "Sample screen. Run the Update market data GitHub Action to replace this with live data.",
+  "regimeDesc": "Some pressure is building, but the dashboard is not showing a broad recession/financial-stress regime. Watch credit and labor confirmation.",
   "chips": [
-    "Rates 58/100",
-    "Credit 22/100",
-    "Labor 25/100",
-    "Oil 44/100",
-    "DXY 48/100"
+    "Rates 50/100",
+    "Credit 50/100",
+    "Labor 50/100",
+    "Oil \u2014/100",
+    "DXY 30/100"
   ],
   "gauges": [
     {
       "name": "Inflation / oil",
-      "score": 44
+      "score": null
     },
     {
       "name": "Rates / term premium",
-      "score": 58
+      "score": 50
     },
     {
       "name": "Labor / recession",
-      "score": 25
+      "score": 50
     },
     {
       "name": "Credit stress",
-      "score": 22
+      "score": 50
     },
     {
       "name": "USD / liquidity",
-      "score": 48
+      "score": 30
     }
   ],
   "posture": {
     "title": "\ud83d\udfe1 Neutral / selective",
-    "text": "Sample posture. Keep strategic exposure but avoid aggressive risk increases until the live data update runs.",
+    "text": "Keep strategic exposure, but avoid increasing risk aggressively while heat is elevated. Prefer liquidity and quality.",
     "items": [
       {
         "name": "Equities",
@@ -61,310 +131,425 @@
   },
   "alerts": [
     {
-      "title": "Credit is the key watch",
-      "text": "Watch HY spreads for acceleration; credit widening is more important than a single daily equity move."
+      "title": "Credit data unavailable",
+      "text": "HY credit spread could not be retrieved; the dashboard will not treat missing data as a stress signal."
     },
     {
-      "title": "Labor needs confirmation",
-      "text": "Use unemployment and the Sahm Rule together rather than reacting to one monthly print."
+      "title": "Labor data unavailable",
+      "text": "Unemployment/Sahm data could not be retrieved; the dashboard will not treat missing data as a stress signal."
     },
     {
-      "title": "Long-end rates matter",
-      "text": "20Y/30Y yields help distinguish ordinary Fed-policy moves from term-premium/fiscal pressure."
+      "title": "Long-end rates unavailable",
+      "text": "30Y Treasury data could not be retrieved."
     },
     {
-      "title": "DXY is context, not a verdict",
-      "text": "A rising dollar can mean safety demand or tighter global liquidity; interpret it with yields and credit."
+      "title": "Oil data unavailable",
+      "text": "WTI data could not be retrieved; the dashboard will not treat missing data as a stress signal."
     }
   ],
   "rates": [
     {
       "name": "2Y Treasury",
-      "display": "4.00",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 38,
-      "label": "Watch",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 3.9
-        },
-        {
-          "v": 4.0
-        },
-        {
-          "v": 4.1
-        },
-        {
-          "v": 4.0
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "Front-end policy expectations; rising rapidly can indicate tighter expected policy.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "10Y Treasury",
-      "display": "4.70",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 55,
+      "heat": 50,
       "label": "Elevated",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 4.35
-        },
-        {
-          "v": 4.5
-        },
-        {
-          "v": 4.62
-        },
-        {
-          "v": 4.7
-        }
-      ]
+      "signal": "Benchmark long-term rate; combines real-rate, inflation and term-premium pressure.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "20Y Treasury",
-      "display": "5.20",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 62,
+      "heat": 50,
       "label": "Elevated",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 4.85
-        },
-        {
-          "v": 5.0
-        },
-        {
-          "v": 5.1
-        },
-        {
-          "v": 5.2
-        }
-      ]
+      "signal": "Long-duration fiscal/inflation pressure.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "30Y Treasury",
-      "display": "5.20",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 63,
+      "heat": 50,
       "label": "Elevated",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 4.8
-        },
-        {
-          "v": 4.95
-        },
-        {
-          "v": 5.1
-        },
-        {
-          "v": 5.2
-        }
-      ]
+      "signal": "Long-term inflation/fiscal credibility and term premium.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "10Y \u2212 2Y",
-      "display": "0.70",
+      "display": "\u2014",
       "unit": "pp",
-      "heat": 32,
-      "label": "Watch",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 0.35
-        },
-        {
-          "v": 0.45
-        },
-        {
-          "v": 0.58
-        },
-        {
-          "v": 0.7
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "Curve context; positive does not automatically mean bullish or bearish.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "30Y \u2212 10Y",
-      "display": "0.50",
+      "display": "\u2014",
       "unit": "pp",
-      "heat": 58,
+      "heat": 50,
       "label": "Elevated",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 0.42
-        },
-        {
-          "v": 0.43
-        },
-        {
-          "v": 0.48
-        },
-        {
-          "v": 0.5
-        }
-      ]
+      "signal": "Long-end term-premium signal.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     }
   ],
   "macro": [
     {
       "name": "WTI Crude",
-      "display": "65.00",
+      "display": "\u2014",
       "unit": "$/bbl",
-      "heat": 44,
-      "label": "Watch",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 62
-        },
-        {
-          "v": 64
-        },
-        {
-          "v": 63
-        },
-        {
-          "v": 65
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "Oil is most concerning when both level and rate of change are high.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "Unemployment",
-      "display": "4.3",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 25,
-      "label": "Watch",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 4.1
-        },
-        {
-          "v": 4.2
-        },
-        {
-          "v": 4.2
-        },
-        {
-          "v": 4.3
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "Labor deterioration is more important than a single unemployment level.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "Sahm Rule",
-      "display": "0.27",
+      "display": "\u2014",
       "unit": "pp",
-      "heat": 20,
+      "heat": 0,
       "label": "Normal",
       "signal": "Classic recession threshold is 0.50pp.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 0.12
-        },
-        {
-          "v": 0.18
-        },
-        {
-          "v": 0.22
-        },
-        {
-          "v": 0.27
-        }
-      ]
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "HY Credit Spread",
-      "display": "3.10",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 24,
-      "label": "Normal",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 3.0
-        },
-        {
-          "v": 3.05
-        },
-        {
-          "v": 3.0
-        },
-        {
-          "v": 3.1
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "High-yield spread is one of the highest-priority financial-stress gauges.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "IG Credit Spread",
-      "display": "0.90",
+      "display": "\u2014",
       "unit": "%",
-      "heat": 20,
-      "label": "Normal",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
-      "history": [
-        {
-          "v": 0.88
-        },
-        {
-          "v": 0.9
-        },
-        {
-          "v": 0.91
-        },
-        {
-          "v": 0.9
-        }
-      ]
+      "heat": 50,
+      "label": "Elevated",
+      "signal": "Investment-grade spread provides a broader credit-stress check.",
+      "change_pct": null,
+      "date": null,
+      "history": []
     },
     {
       "name": "DXY",
       "display": "99.80",
       "unit": "",
-      "heat": 48,
+      "heat": 30,
       "label": "Watch",
-      "signal": "Sample data \u2014 run the workflow.",
-      "change_pct": 0,
-      "date": "sample",
+      "signal": "USD direction changes global financial conditions; interpret jointly with rates and credit.",
+      "change_pct": -1.29,
+      "date": "2026-08-11",
       "history": [
         {
-          "v": 97.8
+          "v": 100.03
         },
         {
-          "v": 98.7
+          "v": 99.98
+        },
+        {
+          "v": 99.64
+        },
+        {
+          "v": 99.13
+        },
+        {
+          "v": 98.82
+        },
+        {
+          "v": 98.65
+        },
+        {
+          "v": 98.37
+        },
+        {
+          "v": 98.12
+        },
+        {
+          "v": 98.06
+        },
+        {
+          "v": 98.22
+        },
+        {
+          "v": 98.1
+        },
+        {
+          "v": 98.05
+        },
+        {
+          "v": 98.41
+        },
+        {
+          "v": 98.59
+        },
+        {
+          "v": 98.8
+        },
+        {
+          "v": 98.51
+        },
+        {
+          "v": 98.48
+        },
+        {
+          "v": 98.62
+        },
+        {
+          "v": 98.92
+        },
+        {
+          "v": 98.08
+        },
+        {
+          "v": 98.21
+        },
+        {
+          "v": 98.47
+        },
+        {
+          "v": 98.48
+        },
+        {
+          "v": 98.02
+        },
+        {
+          "v": 98.25
+        },
+        {
+          "v": 97.84
+        },
+        {
+          "v": 97.94
+        },
+        {
+          "v": 98.29
+        },
+        {
+          "v": 98.48
+        },
+        {
+          "v": 98.88
+        },
+        {
+          "v": 99.27
+        },
+        {
+          "v": 98.97
         },
         {
           "v": 99.3
         },
         {
+          "v": 99.11
+        },
+        {
+          "v": 99.19
+        },
+        {
+          "v": 99.32
+        },
+        {
+          "v": 99.17
+        },
+        {
+          "v": 99.21
+        },
+        {
+          "v": 99.02
+        },
+        {
+          "v": 98.91
+        },
+        {
+          "v": 99.2
+        },
+        {
+          "v": 99.22
+        },
+        {
+          "v": 99.53
+        },
+        {
+          "v": 99.41
+        },
+        {
+          "v": 100.07
+        },
+        {
+          "v": 100.05
+        },
+        {
+          "v": 99.91
+        },
+        {
+          "v": 99.95
+        },
+        {
+          "v": 99.86
+        },
+        {
+          "v": 99.75
+        },
+        {
+          "v": 99.63
+        },
+        {
+          "v": 99.54
+        },
+        {
+          "v": 100.09
+        },
+        {
+          "v": 100.85
+        },
+        {
+          "v": 101.02
+        },
+        {
+          "v": 101.41
+        },
+        {
+          "v": 101.61
+        },
+        {
+          "v": 101.43
+        },
+        {
+          "v": 101.36
+        },
+        {
+          "v": 101.11
+        },
+        {
+          "v": 101.19
+        },
+        {
+          "v": 101.39
+        },
+        {
+          "v": 100.86
+        },
+        {
+          "v": 100.85
+        },
+        {
+          "v": 101.14
+        },
+        {
+          "v": 101.05
+        },
+        {
+          "v": 100.94
+        },
+        {
+          "v": 100.97
+        },
+        {
+          "v": 101.28
+        },
+        {
+          "v": 100.94
+        },
+        {
+          "v": 100.5
+        },
+        {
+          "v": 100.73
+        },
+        {
+          "v": 100.75
+        },
+        {
+          "v": 100.99
+        },
+        {
+          "v": 101.18
+        },
+        {
+          "v": 101.14
+        },
+        {
+          "v": 101.43
+        },
+        {
+          "v": 101.47
+        },
+        {
+          "v": 101.51
+        },
+        {
+          "v": 101.38
+        },
+        {
+          "v": 100.8
+        },
+        {
+          "v": 100.01
+        },
+        {
           "v": 99.8
+        },
+        {
+          "v": 99.96
+        },
+        {
+          "v": 99.89
+        },
+        {
+          "v": 99.69
+        },
+        {
+          "v": 99.97
+        },
+        {
+          "v": 99.6
+        },
+        {
+          "v": 99.81
+        },
+        {
+          "v": 99.802
         }
       ]
     }
