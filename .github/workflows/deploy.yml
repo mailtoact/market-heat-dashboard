@@ -40,7 +40,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in data.json"
           else
-            git commit -m "Auto-update market data"
+            git commit -m "Auto-update market data [skip ci]"
             git push
           fi
 
