@@ -1,294 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-<meta name="theme-color" content="#0b0e11">
-<title>Market Heat</title>
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon.svg">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Market Heat">
-<style>
-  :root{
-    --bg: #0b0e11;
-    --panel: #12161b;
-    --panel-2: #171c22;
-    --line: #232a32;
-    --ink: #e7ecef;
-    --ink-dim: #8a97a3;
-    --ink-faint: #55626e;
-    --amber: #e0a83e;
-    --cool: #4f9dd4;
-    --warm: #d9762f;
-    --hot: #c94f4f;
-    --good: #4f9d6e;
-    --mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
-    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  }
-  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-    -webkit-font-smoothing:antialiased;}
-  body{padding-bottom:calc(28px + env(safe-area-inset-bottom));}
-  a{color:inherit;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Market Heat Dashboard</title>
+  
+  <!-- PWA Manifest & iOS Metas -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="icon.svg">
 
-  .wrap{max-width:640px;margin:0 auto;padding:0 16px;}
+  <style>
+    :root {
+      --bg-color: #000000;
+      --card-bg: #1c1c1e;
+      --card-border: #2c2c2e;
+      --text-main: #ffffff;
+      --text-muted: #8e8e93;
+      --accent-blue: #0a84ff;
+      --accent-green: #30d158;
+      --accent-red: #ff453a;
+      --accent-orange: #ff9f0a;
+      --accent-yellow: #ffd60a;
+    }
 
-  header.top{
-    padding:calc(18px + env(safe-area-inset-top)) 16px 10px;
-    display:flex;align-items:baseline;justify-content:space-between;
-    border-bottom:1px solid var(--line);
-  }
-  header.top .brand{font-family:var(--mono);letter-spacing:.08em;font-size:12px;color:var(--ink-faint);text-transform:uppercase;}
-  header.top .clock{font-family:var(--mono);font-size:11px;color:var(--ink-faint);}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-  /* ---- Regime hero ---- */
-  .hero{padding:22px 0 8px;}
-  .hero-label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);}
-  .regime{
-    font-size:38px;font-weight:700;letter-spacing:-0.01em;margin:4px 0 2px;
-    display:flex;align-items:center;gap:10px;
-  }
-  .regime .dot{width:11px;height:11px;border-radius:50%;flex:none;box-shadow:0 0 14px 2px currentColor;}
-  .narrative{color:var(--ink-dim);font-size:14.5px;line-height:1.5;margin:6px 0 18px;max-width:56ch;}
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 16px;
+      padding-top: calc(env(safe-area-inset-top) + 16px);
+      padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-  /* signature element: heat gauge */
-  .gauge-wrap{margin:10px 0 6px;}
-  .gauge{
-    position:relative;height:14px;border-radius:8px;overflow:visible;
-    background:linear-gradient(90deg,
-      #2d6fa3 0%, #4f9dd4 22%, #e0a83e 48%, #d9762f 70%, #c94f4f 100%);
-  }
-  .gauge .tick{position:absolute;top:-5px;bottom:-5px;width:1px;background:rgba(0,0,0,.35);}
-  .gauge .marker{
-    position:absolute;top:-7px;width:3px;height:28px;background:#fff;border-radius:2px;
-    box-shadow:0 0 0 3px rgba(11,14,17,.9), 0 0 10px rgba(255,255,255,.5);
-    transition:left .6s cubic-bezier(.2,.8,.2,1);
-  }
-  .gauge-scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--ink-faint);margin-top:8px;}
-  .gauge-score{font-family:var(--mono);font-size:12px;color:var(--ink-dim);margin-top:2px;}
-  .gauge-score b{color:var(--ink);font-size:15px;}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
 
-  /* health strip */
-  .health{
-    margin:18px 0 4px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;
-    display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;background:var(--panel);
-  }
-  .health .hstat{width:8px;height:8px;border-radius:50%;flex:none;}
-  .health .hstat.full{background:var(--good);}
-  .health .hstat.partial{background:var(--amber);}
-  .health .hstat.bad{background:var(--hot);}
-  .health .htxt{color:var(--ink-dim);flex:1;}
-  .health .hts{color:var(--ink-faint);}
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
 
-  /* section label */
-  .section-label{
-    font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
-    color:var(--ink-faint);margin:26px 0 10px;
-  }
+    .status-badge {
+      font-size: 0.75rem;
+      background: #2c2c2e;
+      color: var(--accent-blue);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
 
-  /* indicator grid */
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-  .card{
-    border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:12px 13px;
-    position:relative; overflow:hidden;
-  }
-  .card.unavailable{opacity:.45;}
-  .card .clabel{font-size:11.5px;color:var(--ink-dim);margin-bottom:6px;line-height:1.3;}
-  .card .cvalue{font-family:var(--mono);font-size:21px;font-weight:600;color:var(--ink);display:flex;align-items:baseline;gap:5px;}
-  .card .cunit{font-size:12px;color:var(--ink-faint);font-weight:400;}
-  .card .ctrend{font-family:var(--mono);font-size:11px;margin-top:5px;display:flex;align-items:center;gap:4px;}
-  .card .ctrend.rising{color:var(--warm);}
-  .card .ctrend.falling{color:var(--cool);}
-  .card .ctrend.flat{color:var(--ink-faint);}
-  .card .cmeta{font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);margin-top:8px;
-    border-top:1px solid var(--line);padding-top:6px;}
-  .card .cmeta .err{color:var(--hot);}
+    /* HEAT SCORE GAUGE CARD */
+    .heat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
 
-  /* portfolio guidance */
-  .guide{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:4px 0;overflow:hidden;}
-  .grow{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;font-size:13.5px;}
-  .grow + .grow{border-top:1px solid var(--line);}
-  .grow .glabel{color:var(--ink-dim);}
-  .grow .gval{color:var(--ink);font-weight:500;text-align:right;max-width:60%;}
-  .stance-banner{
-    font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;
-    padding:10px 14px;color:var(--ink);background:var(--panel-2);border-bottom:1px solid var(--line);
-  }
+    .heat-score-val {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+      margin: 10px 0;
+    }
 
-  footer{margin:30px 0 10px;text-align:center;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);}
-  footer a{text-decoration:underline;}
+    .regime-badge {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
-  .skeleton{color:var(--ink-faint);text-align:center;padding:60px 20px;font-family:var(--mono);font-size:13px;}
+    .bg-green { background: rgba(48, 209, 88, 0.2); color: var(--accent-green); }
+    .bg-orange { background: rgba(255, 159, 10, 0.2); color: var(--accent-orange); }
+    .bg-red { background: rgba(255, 69, 58, 0.2); color: var(--accent-red); }
 
-  @media (max-width:380px){
-    .regime{font-size:31px;}
-    .grid{grid-template-columns:1fr 1fr;gap:8px;}
-  }
+    /* SECTION HEADINGS */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
 
-  @media (prefers-reduced-motion: reduce){
-    .gauge .marker{transition:none;}
-  }
-</style>
+    /* ASSET MATRIX GRID */
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .asset-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .asset-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .asset-ticker {
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .asset-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .asset-price {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .asset-change {
+      font-size: 0.75rem;
+      padding: 3px 6px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .change-up { background: rgba(48, 209, 88, 0.2); color: var(--accent-green); }
+    .change-down { background: rgba(255, 69, 58, 0.2); color: var(--accent-red); }
+
+    .sparkline-container {
+      margin: 10px 0;
+      height: 32px;
+    }
+
+    .sparkline-svg {
+      width: 100%;
+      height: 100%;
+      stroke: var(--accent-blue);
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .asset-metrics {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--card-border);
+      padding-top: 8px;
+    }
+
+    .tailwind-badge {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px;
+      border-radius: 6px;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .badge-favorable { background: rgba(48, 209, 88, 0.15); color: var(--accent-green); }
+    .badge-neutral { background: rgba(142, 142, 147, 0.15); color: var(--text-muted); }
+
+    /* FOOTER METRICS */
+    .timestamp {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div class="brand">Market Heat</div>
-    <div class="clock" id="clock">—</div>
+
+  <header>
+    <h1>Market Heat</h1>
+    <div id="live-status" class="status-badge">Connecting...</div>
   </header>
 
-  <div id="app">
-    <div class="skeleton">Loading data.json…</div>
+  <!-- MACRO HEAT GAUGE CARD -->
+  <div class="heat-card">
+    <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">MACRO HEAT SCORE</div>
+    <div id="heat-score" class="heat-score-val">--</div>
+    <div id="regime-name" class="regime-badge bg-orange">Loading Regime...</div>
   </div>
 
-  <footer>
-    Data: FRED (official API) &amp; Yahoo Finance · Pipeline V5<br>
-    Decision-support only — not investment advice.
-  </footer>
-</div>
-
-<script>
-const REGIME_COLOR = {
-  "Low Heat": "var(--good)",
-  "Elevated": "var(--amber)",
-  "High Heat": "var(--warm)",
-  "Stress": "var(--hot)",
-  "Unknown": "var(--ink-faint)",
-};
-
-const GUIDE_LABELS = [
-  ["equities","Equities"], ["gold","Gold"], ["btc","BTC"],
-  ["bonds","Bonds"], ["tips","TIPS"], ["cash","Cash"],
-];
-
-function fmtAgo(iso){
-  if(!iso) return "";
-  const d = new Date(iso);
-  if(isNaN(d)) return "";
-  const mins = Math.round((Date.now()-d.getTime())/60000);
-  if(mins < 1) return "just now";
-  if(mins < 60) return mins + "m ago";
-  const hrs = Math.round(mins/60);
-  if(hrs < 48) return hrs + "h ago";
-  return Math.round(hrs/24) + "d ago";
-}
-
-function trendArrow(t){
-  if(t === "rising") return "▲";
-  if(t === "falling") return "▼";
-  return "·";
-}
-
-function renderHealth(h){
-  const ratio = h.total_count ? h.live_count / h.total_count : 0;
-  const cls = ratio === 1 ? "full" : (ratio >= 0.6 ? "partial" : "bad");
-  return `<div class="health">
-    <div class="hstat ${cls}"></div>
-    <div class="htxt">Data Health — ${h.status}</div>
-  </div>`;
-}
-
-function renderGauge(score, regime){
-  const pct = score === null || score === undefined ? 0 : Math.max(0, Math.min(100, score));
-  const color = REGIME_COLOR[regime] || "var(--ink-faint)";
-  return `
-    <div class="gauge-wrap">
-      <div class="gauge">
-        <div class="tick" style="left:25%"></div>
-        <div class="tick" style="left:50%"></div>
-        <div class="tick" style="left:75%"></div>
-        <div class="marker" style="left:calc(${pct}% - 1.5px)"></div>
-      </div>
-      <div class="gauge-scale"><span>0 Low</span><span>25</span><span>50</span><span>75</span><span>100 Stress</span></div>
-      <div class="gauge-score">Heat Score <b>${score === null || score === undefined ? "—" : score}</b> / 100</div>
-    </div>`;
-}
-
-function renderCard(res){
-  if(!res || res.status !== "live"){
-    const label = res ? res.label : "—";
-    const err = res && res.error ? res.error : "No data";
-    return `<div class="card unavailable">
-      <div class="clabel">${label}</div>
-      <div class="cvalue">—</div>
-      <div class="cmeta err">${err}</div>
-    </div>`;
-  }
-  const arrow = trendArrow(res.trend);
-  const trendCls = res.trend || "flat";
-  let chg = "";
-  if(res.change_display === "pp" && res.change_abs !== null && res.change_abs !== undefined){
-    chg = `${res.change_abs > 0 ? "+" : ""}${res.change_abs}pp`;
-  } else if(res.change_pct !== null && res.change_pct !== undefined){
-    chg = `${res.change_pct > 0 ? "+" : ""}${res.change_pct}%`;
-  }
-  return `<div class="card">
-    <div class="clabel">${res.label}</div>
-    <div class="cvalue">${res.value}<span class="cunit">${res.unit || ""}</span></div>
-    <div class="ctrend ${trendCls}">${arrow} ${res.trend || "flat"} ${chg}</div>
-    <div class="cmeta">${res.date || ""} · ${res.source || ""}</div>
-  </div>`;
-}
-
-function render(data){
-  const hs = data.heat_score || {};
-  const regime = hs.regime || "Unknown";
-  const color = REGIME_COLOR[regime] || "var(--ink-faint)";
-  const narrative = (data.interpretation && data.interpretation.narrative) || "";
-  const guidance = (data.interpretation && data.interpretation.portfolio_guidance) || {};
-
-  const order = ["wti","y2","y10","y20","y30","spread_10y2y","unemployment","sahm_rule","hy_spread","ig_spread","dxy"];
-  const cards = order.map(k => renderCard(data.indicators ? data.indicators[k] : null)).join("");
-
-  const guideRows = GUIDE_LABELS.map(([key,label]) =>
-    `<div class="grow"><div class="glabel">${label}</div><div class="gval">${guidance[key] || "—"}</div></div>`
-  ).join("");
-
-  document.getElementById("app").innerHTML = `
-    <div class="hero">
-      <div class="hero-label">Overall Regime</div>
-      <div class="regime" style="color:${color}"><span class="dot" style="background:${color}"></span>${regime}</div>
-      <div class="narrative">${narrative}</div>
-      ${renderGauge(hs.score, regime)}
+  <!-- PORTFOLIO ASSET MATRIX SECTION -->
+  <section>
+    <h2 class="section-title">Portfolio Asset Matrix</h2>
+    <div id="asset-cards-grid" class="asset-grid">
+      <!-- Dynamically populated via Javascript -->
     </div>
+  </section>
 
-    ${renderHealth(data.data_health || {live_count:0,total_count:0,status:"unknown"})}
+  <div id="last-updated" class="timestamp">Last Updated: --</div>
 
-    <div class="section-label">Indicators</div>
-    <div class="grid">${cards}</div>
+  <script>
+    async function initDashboard() {
+      try {
+        // Cache buster parameter prevents browser caching old data
+        const res = await fetch('data.json?t=' + new Date().getTime());
+        if (!res.ok) throw new Error('Data fetch failed');
+        
+        const data = await res.json();
 
-    <div class="section-label">Portfolio Read</div>
-    <div class="guide">
-      <div class="stance-banner">${(guidance.stance || "—")}</div>
-      ${guideRows}
-    </div>
-  `;
+        // 1. Update Heat Score & Regime Banner
+        const score = data.macro.heat_score ?? 50;
+        const scoreElem = document.getElementById('heat-score');
+        const regimeElem = document.getElementById('regime-name');
+        
+        scoreElem.innerText = score;
+        regimeElem.innerText = data.macro.regime || 'Normal / Soft Landing';
 
-  document.getElementById("clock").textContent = "Updated " + fmtAgo(data.generated_at);
-}
+        if (score <= 45) {
+          scoreElem.style.color = 'var(--accent-green)';
+          regimeElem.className = 'regime-badge bg-green';
+        } else if (score <= 65) {
+          scoreElem.style.color = 'var(--accent-orange)';
+          regimeElem.className = 'regime-badge bg-orange';
+        } else {
+          scoreElem.style.color = 'var(--accent-red)';
+          regimeElem.className = 'regime-badge bg-red';
+        }
 
-async function load(){
-  try{
-    const res = await fetch("data.json", {cache:"no-store"});
-    if(!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
-    render(data);
-  }catch(err){
-    document.getElementById("app").innerHTML =
-      `<div class="skeleton">Could not load data.json<br><span style="color:var(--hot)">${err}</span></div>`;
-  }
-}
+        // 2. Update Header Status & Footer Timestamp
+        document.getElementById('live-status').innerText = data.health?.live_status || 'Live';
+        document.getElementById('last-updated').innerText = 'Last Updated: ' + (data.timestamp || 'N/A');
 
-load();
-setInterval(load, 5 * 60 * 1000); // soft refresh every 5 min while the app is open
+        // 3. Render Portfolio Asset Grid
+        const grid = document.getElementById('asset-cards-grid');
+        grid.innerHTML = '';
 
-if("serviceWorker" in navigator){
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
-  });
-}
-</script>
+        if (data.assets) {
+          for (const [ticker, asset] of Object.entries(data.assets)) {
+            const isUp = (asset.d1_pct || 0) >= 0;
+            const changeClass = isUp ? 'change-up' : 'change-down';
+            const sign = isUp ? '+' : '';
+            const tailwindClass = asset.tailwind === 'Favorable' ? 'badge-favorable' : 'badge-neutral';
+
+            const cardHtml = `
+              <div class="asset-card">
+                <div>
+                  <div class="asset-header">
+                    <div>
+                      <div class="asset-ticker">${ticker}</div>
+                      <div class="asset-sub">${asset.name || ''}</div>
+                    </div>
+                    <span class="asset-change ${changeClass}">${sign}${asset.d1_pct ?? 0}%</span>
+                  </div>
+                  <div class="asset-price">$${asset.price !== null ? asset.price : 'N/A'}</div>
+                </div>
+
+                <div class="sparkline-container">
+                  <svg class="sparkline-svg" viewBox="0 0 120 30" preserveAspectRatio="none">
+                    <path d="${asset.sparkline_svg || ''}" />
+                  </svg>
+                </div>
+
+                <div>
+                  <div class="asset-metrics">
+                    <span>1M: ${asset.m1_pct ?? 0}%</span>
+                    <span>3M: ${asset.m3_pct ?? 0}%</span>
+                  </div>
+                  <div class="tailwind-badge ${tailwindClass}">
+                    ${asset.tailwind || 'Neutral'} Tailwinds
+                  </div>
+                </div>
+              </div>
+            `;
+            grid.innerHTML += cardHtml;
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load dashboard data:', err);
+        document.getElementById('live-status').innerText = 'Offline / Error';
+      }
+    }
+
+    // Run on page load
+    initDashboard();
+
+    // Register Service Worker for PWA Offline Capability
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
 </body>
 </html>
