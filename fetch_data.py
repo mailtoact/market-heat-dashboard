@@ -174,20 +174,20 @@ y30=last(rates30)[1]; y30d=delta(rates30)
 
 if hy30 is not None and hy30>0.40:add_alert("Credit is widening",f"HY spread is up {hy30:.2f} percentage points over 30 days. This is a higher-priority recession warning.",1)
 elif hy is not None and hy>5:add_alert("Credit is elevated",f"HY spread is {hy:.2f}%. Watch for further widening and confirmation from labor.",2)
-else:add_alert("Credit is contained",f"HY spread is {hy:.2f}% and has not shown a major 30-day widening.",4)
+else:add_alert("Credit data unavailable" if hy is None else "Credit is contained", "HY credit spread could not be retrieved; the dashboard will not treat missing data as a stress signal." if hy is None else f"HY spread is {hy:.2f}% and has not shown a major 30-day widening.", 3 if hy is None else 4)
 
 if un30 is not None and un30>0.30:add_alert("Labor is deteriorating",f"Unemployment is up {un30:.2f} percentage points over the latest 30-day/monthly observation window.",1)
 elif sahm is not None and sahm>=0.50:add_alert("Sahm Rule triggered",f"Sahm Rule is {sahm:.2f}pp, above the classic 0.50pp recession threshold.",1)
-else:add_alert("Labor has not confirmed recession",f"Unemployment is {un:.1f}% and Sahm Rule is {sahm:.2f}pp.",4)
+else:add_alert("Labor data unavailable" if un is None else "Labor has not confirmed recession", "Unemployment/Sahm data could not be retrieved; the dashboard will not treat missing data as a stress signal." if un is None else f"Unemployment is {un:.1f}% and Sahm Rule is {sahm:.2f}pp.", 3 if un is None else 4)
 
 if y30 is not None and y30d is not None and y30>5 and y30d>0.20:add_alert("Long-end rates are hot",f"30Y is {y30:.2f}% and up {y30d:.2f}pp over 30 days.",2)
-else:add_alert("Long-end rates are the watch point",f"30Y Treasury is {y30:.2f}%; monitor term premium and fiscal/inflation expectations.",4)
+else:add_alert("Long-end rates unavailable" if y30 is None else "Long-end rates are the watch point", "30Y Treasury data could not be retrieved." if y30 is None else f"30Y Treasury is {y30:.2f}%; monitor term premium and fiscal/inflation expectations.", 3 if y30 is None else 4)
 
 if wti30 is not None and wti30>10:add_alert("Oil shock risk",f"WTI is up {wti30:.1f}% over 30 days. A sustained energy move can revive inflation pressure.",2)
-else:add_alert("Oil is not a major shock signal",f"WTI is ${wti:.2f}/bbl with a 30-day move of {wti30:.1f}%.",4)
+else:add_alert("Oil data unavailable" if wti is None else "Oil is not a major shock signal", "WTI data could not be retrieved." if wti is None else f"WTI is ${wti:.2f}/bbl with a 30-day move of {wti30:.1f}%.", 3 if wti is None else 4)
 
 if dxy30 is not None and dxy30>3:add_alert("USD tightening signal",f"DXY is up {dxy30:.1f}% over 30 days. Combine with credit and yields to assess global liquidity stress.",2)
-else:add_alert("USD is a context signal",f"DXY is {dxy:.2f}; interpret its direction alongside yields and credit.",4)
+else:add_alert("DXY data unavailable" if dxy is None else "USD is a context signal", "DXY data could not be retrieved." if dxy is None else f"DXY is {dxy:.2f}; interpret its direction alongside yields and credit.", 3 if dxy is None else 4)
 
 alerts=sorted(alerts,key=lambda x:x[0])[:4]
 
