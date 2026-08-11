@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07101b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Market Heat">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Market Heat</title>
+<style>
+:root{--bg:#07101b;--panel:#0d1724;--panel2:#111d2b;--line:#23354b;--text:#edf4fb;--muted:#8fa1b5;--green:#32d296;--yellow:#f5c451;--orange:#fb923c;--red:#f87171;--blue:#68a7ff}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:radial-gradient(circle at 20% -10%,#142840 0,#07101b 35%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:18px 14px 44px}.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.brand{font-size:25px;font-weight:750;letter-spacing:-.5px}.sub{font-size:12px;color:var(--muted);margin-top:3px}.updated{text-align:right;font-size:10px;color:var(--muted)}.health{display:inline-flex;align-items:center;gap:5px;margin-top:5px;padding:4px 7px;border:1px solid var(--line);border-radius:999px;font-size:9px}.dot{width:6px;height:6px;border-radius:50%;display:inline-block}.health.green .dot{background:var(--green)}.health.yellow .dot{background:var(--yellow)}.health.red .dot{background:var(--red)}
+.hero{margin-top:15px;background:linear-gradient(145deg,#122235,#0c1521);border:1px solid var(--line);border-radius:24px;padding:17px;box-shadow:0 16px 45px #0006}
+.heroTop{display:grid;grid-template-columns:145px 1fr;gap:18px;align-items:center}.ring{width:140px;height:140px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--score)*1%),#1d2a3a 0);display:grid;place-items:center;position:relative}.ring:after{content:"";position:absolute;inset:10px;background:#0b1420;border-radius:50%}.ringIn{position:relative;z-index:1;text-align:center}.ringIn b{font-size:42px;display:block;line-height:1}.ringIn span{font-size:10px;color:var(--muted)}.regime{font-size:23px;font-weight:750;letter-spacing:-.3px}.desc{font-size:13px;color:#b9c6d4;line-height:1.45;margin-top:5px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.chip{font-size:10px;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#cbd6e3;background:#0a1420}.actions{display:flex;gap:7px;margin-top:12px}.btn{font:inherit;font-size:11px;color:#dce7f4;background:#17263a;border:1px solid #2c4059;border-radius:10px;padding:7px 10px}.btn:active{transform:translateY(1px)}
+.gauges{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}.g{background:#0a1420;border:1px solid var(--line);border-radius:13px;padding:10px}.gname{font-size:10px;color:var(--muted)}.gval{font-size:20px;font-weight:750;margin-top:3px}.bar{height:5px;background:#1c2a3b;border-radius:99px;margin-top:7px;overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:var(--accent)}
+.section{margin-top:22px}.sectionTitle{display:flex;justify-content:space-between;align-items:end;margin-bottom:9px}.sectionTitle h2{font-size:16px;margin:0}.hint{font-size:10px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:13px;min-width:0}.head{display:flex;justify-content:space-between;gap:7px}.name{font-size:13px;font-weight:650}.badge{font-size:9px;padding:4px 6px;border-radius:999px;white-space:nowrap}.green{color:var(--green);background:#0a2a21}.yellow{color:var(--yellow);background:#30260e}.orange{color:var(--orange);background:#341d0d}.red{color:var(--red);background:#351518}.blue{color:var(--blue);background:#112641}.value{font-size:21px;font-weight:750;margin-top:5px}.unit{font-size:11px;color:var(--muted);font-weight:500}.trend{font-size:10px;margin-top:3px}.up{color:var(--orange)}.down{color:var(--blue)}.flat{color:var(--muted)}canvas{width:100%;height:58px;margin-top:6px}.signal{font-size:10px;line-height:1.4;color:#aebdcd;margin-top:6px}
+.alerts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.alert{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:12px}.alert strong{font-size:12px}.alert p{margin:5px 0 0;font-size:11px;color:#b8c5d3;line-height:1.45}.actionBox{background:linear-gradient(145deg,#101e2e,#0b1420);border:1px solid var(--line);border-radius:18px;padding:14px}.posture{font-size:20px;font-weight:750}.posture p{font-size:12px;font-weight:400;color:#b7c4d2;line-height:1.45;margin:6px 0 0}.postureGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}.postureItem{border:1px solid var(--line);border-radius:11px;padding:9px;background:#09131f}.postureItem b{display:block;font-size:10px;color:var(--muted)}.postureItem span{display:block;margin-top:3px;font-size:12px;font-weight:650}.footer{font-size:9px;color:#718297;line-height:1.55;margin-top:24px}.footer a{color:#8ebcff}
+@media(max-width:760px){.gauges{grid-template-columns:repeat(2,1fr)}.gauges .g:last-child{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.heroTop{grid-template-columns:120px 1fr}.ring{width:115px;height:115px}.regime{font-size:19px}.ringIn b{font-size:34px}.postureGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:470px){.grid{grid-template-columns:1fr}.alerts{grid-template-columns:1fr}.heroTop{grid-template-columns:1fr}.ring{margin:auto}.updated{font-size:9px}.brand{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div><div class="brand">Market Heat</div><div class="sub">Macro regime & recession early-warning dashboard</div></div>
+    <div class="updated" id="updated">Loading…<div id="health" class="health yellow"><i class="dot"></i><span>Data health: checking</span></div></div>
+  </div>
+
+  <section class="hero">
+    <div class="heroTop">
+      <div class="ring" id="ring" style="--score:0;--accent:var(--green)"><div class="ringIn"><b id="score">--</b><span>MARKET HEAT</span></div></div>
+      <div>
+        <div class="regime" id="regime">Loading…</div>
+        <div class="desc" id="desc">Loading current macro regime.</div>
+        <div class="chips" id="chips"></div>
+        <div class="actions"><button class="btn" onclick="load()">↻ Refresh</button><button class="btn" onclick="toggleHelp()">ⓘ How to read</button></div>
+      </div>
+    </div>
+    <div class="gauges" id="gauges"></div>
+  </section>
+
+  <section class="section" id="actionSection">
+    <div class="sectionTitle"><h2>Portfolio posture</h2><span class="hint">Rules-based context, not a trading signal</span></div>
+    <div class="actionBox" id="posture"></div>
+  </section>
+
+  <section class="section">
+    <div class="sectionTitle"><h2>What changed?</h2><span class="hint">Largest current warning signals</span></div>
+    <div class="alerts" id="alerts"></div>
+  </section>
+
+  <section class="section"><div class="sectionTitle"><h2>Rates & curve</h2><span class="hint">Level + trend</span></div><div class="grid" id="rates"></div></section>
+  <section class="section"><div class="sectionTitle"><h2>Inflation, labor, credit & USD</h2><span class="hint">Level + trend</span></div><div class="grid" id="macro"></div></section>
+
+  <section class="section" id="help" style="display:none">
+    <div class="actionBox"><b>How the score works</b><p class="desc">The score combines five buckets: rates/term premium, labor, credit, oil/inflation pressure, and DXY/liquidity. Each bucket uses both the current level and recent direction where appropriate. Credit and labor receive more weight because they are more useful for detecting a transition toward recession. The model is intentionally transparent and tunable in <code>fetch_data.py</code>.</p></div>
+  </section>
+
+  <div class="footer">
+    Informational monitoring tool only; not investment advice. Data may be delayed or revised. FRED is the primary source for Treasury, unemployment, oil and credit series. DXY is sourced from Yahoo Finance. Historical values and macro releases can be revised.
+  </div>
+</div>
+<script>
+const $=x=>document.getElementById(x);
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function cls(v){return v<25?'green':v<50?'yellow':v<70?'orange':'red'}
+function trendClass(t){return t>0.15?'up':t<-0.15?'down':'flat'}
+function fmtTrend(t){if(t==null)return '';return (t>0?'+':'')+Number(t).toFixed(1)+'% / 30d'}
+function card(m){
+  return `<div class="card"><div class="head"><div class="name">${esc(m.name)}</div><span class="badge ${cls(m.heat)}">${esc(m.label)}</span></div>
+  <div class="value">${esc(m.display)} <span class="unit">${esc(m.unit||'')}</span></div>
+  <div class="trend ${trendClass(m.change_pct)}">${esc(fmtTrend(m.change_pct))}</div>
+  <canvas data-points="${(m.history||[]).map(x=>x.v).join(',')}"></canvas>
+  <div class="signal">${esc(m.signal)}</div></div>`
+}
+function spark(c,p){
+  if(p.length<2)return;let d=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;c.width=w*d;c.height=h*d;let x=c.getContext('2d');x.scale(d,d);
+  let mn=Math.min(...p),mx=Math.max(...p),sp=mx-mn||1;x.beginPath();p.forEach((v,i)=>{let px=1+i*(w-2)/(p.length-1),py=h-5-(v-mn)/sp*(h-12);i?x.lineTo(px,py):x.moveTo(px,py)});x.strokeStyle='#68a7ff';x.lineWidth=1.6;x.stroke()
+}
+function toggleHelp(){let e=$('help');e.style.display=e.style.display==='none'?'block':'none'}
+async function load(){
+  try{
+    const r=await fetch('data.json?ts='+Date.now(),{cache:'no-store'});const d=await r.json();
+    $('updated').innerHTML='Data '+new Date(d.updated).toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})+'<div id=\"health\" class=\"health '+(d.dataHealth?.status||'yellow')+'\"><i class=\"dot\"></i><span>Data health: '+(d.dataHealth?.live??0)+'/'+(d.dataHealth?.total??0)+' live</span></div>';
+    $('score').textContent=d.score;$('ring').style.setProperty('--score',d.score);$('ring').style.setProperty('--accent',d.accent);
+    $('regime').textContent=d.regime;$('desc').textContent=d.regimeDesc;
+    $('chips').innerHTML=d.chips.map(x=>`<span class="chip">${esc(x)}</span>`).join('');
+    $('gauges').innerHTML=d.gauges.map(g=>`<div class="g"><div class="gname">${esc(g.name)}</div><div class="gval">${g.score==null?"—":g.score}</div><div class="bar"><i style="width:${g.score==null?0:g.score}%;background:${d.accent}"></i></div></div>`).join('');
+    $('posture').innerHTML=`<div class="posture">${esc(d.posture.title)}<p>${esc(d.posture.text)}</p></div><div class="postureGrid">${d.posture.items.map(x=>`<div class="postureItem"><b>${esc(x.name)}</b><span>${esc(x.value)}</span></div>`).join('')}</div>`;
+    $('alerts').innerHTML=d.alerts.map(a=>`<div class="alert"><strong>${esc(a.title)}</strong><p>${esc(a.text)}</p></div>`).join('');
+    $('rates').innerHTML=d.rates.map(card).join('');$('macro').innerHTML=d.macro.map(card).join('');
+    document.querySelectorAll('canvas').forEach(c=>spark(c,c.dataset.points.split(',').filter(Boolean).map(Number)));
+  }catch(e){$('regime').textContent='Data unavailable';$('desc').textContent='The data update workflow has not produced a valid data.json yet. Run the GitHub Action manually.'}
+}
+load();
+</script>
+</body>
+</html>
