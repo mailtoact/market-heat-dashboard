@@ -1,0 +1,15 @@
+{
+  "name": "Market Heat Dashboard",
+  "short_name": "Market Heat",
+  "description": "Macro market heat / regime dashboard — soft landing, overheating, growth slowdown, or recession/financial stress.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0e11",
+  "theme_color": "#0b0e11",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

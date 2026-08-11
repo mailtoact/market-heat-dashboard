@@ -1,0 +1,26 @@
+{
+  "generated_at": null,
+  "pipeline_version": "V5",
+  "data_health": {
+    "live_count": 0,
+    "total_count": 11,
+    "status": "not yet run",
+    "detail": []
+  },
+  "indicators": {},
+  "heat_score": {
+    "score": null,
+    "overheat_subscore": null,
+    "stress_subscore": null,
+    "regime": "Unknown",
+    "indicators_used": 0,
+    "indicators_total": 11
+  },
+  "interpretation": {
+    "narrative": "Waiting for the first 'Update Market Data' GitHub Actions run to populate live data.",
+    "portfolio_guidance": {
+      "stance": "No guidance yet",
+      "equities": "-", "gold": "-", "btc": "-", "bonds": "-", "tips": "-", "cash": "-"
+    }
+  }
+}
