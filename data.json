@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T13:02:39Z",
+  "generated_at": "2026-08-12T14:06:36Z",
   "pipeline_version": "V5",
   "data_health": {
     "live_count": 11,
@@ -190,11 +190,11 @@
     "hy_spread": {
       "key": "hy_spread",
       "status": "live",
-      "value": 2.7,
-      "date": "2026-08-10",
+      "value": 2.72,
+      "date": "2026-08-11",
       "trend": "falling",
-      "change_pct": -2.88,
-      "change_abs": -0.08,
+      "change_pct": -0.37,
+      "change_abs": -0.01,
       "source": "FRED:BAMLH0A0HYM2",
       "error": null,
       "label": "High Yield Spread",
@@ -204,11 +204,11 @@
     "ig_spread": {
       "key": "ig_spread",
       "status": "live",
-      "value": 0.78,
-      "date": "2026-08-10",
-      "trend": "flat",
-      "change_pct": 0.0,
-      "change_abs": 0.0,
+      "value": 0.79,
+      "date": "2026-08-11",
+      "trend": "rising",
+      "change_pct": 1.28,
+      "change_abs": 0.01,
       "source": "FRED:BAMLC0A0CM",
       "error": null,
       "label": "Investment Grade Spread",
@@ -218,11 +218,11 @@
     "dxy": {
       "key": "dxy",
       "status": "live",
-      "value": 99.68,
+      "value": 99.71,
       "date": "2026-08-12",
-      "trend": "falling",
-      "change_pct": -0.01,
-      "change_abs": -0.01,
+      "trend": "rising",
+      "change_pct": 0.02,
+      "change_abs": 0.023,
       "source": "Yahoo:DX-Y.NYB",
       "error": null,
       "label": "US Dollar Index (DXY)",
@@ -231,9 +231,9 @@
     }
   },
   "heat_score": {
-    "score": 21.4,
+    "score": 21.7,
     "overheat_subscore": 31.6,
-    "stress_subscore": 11.1,
+    "stress_subscore": 11.8,
     "regime": "Low Heat",
     "indicators_used": 9,
     "indicators_total": 11
