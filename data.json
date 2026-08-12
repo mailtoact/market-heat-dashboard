@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T17:01:54Z",
+  "generated_at": "2026-08-12T18:02:15Z",
   "pipeline_version": "V5",
   "data_health": {
     "live_count": 11,
@@ -78,11 +78,11 @@
     "wti": {
       "key": "wti",
       "status": "live",
-      "value": 81.96,
-      "date": "2026-08-03",
-      "trend": "falling",
-      "change_pct": -2.72,
-      "change_abs": -2.29,
+      "value": 84.77,
+      "date": "2026-08-11",
+      "trend": "rising",
+      "change_pct": 9.62,
+      "change_abs": 7.44,
       "source": "FRED:DCOILWTICO",
       "error": null,
       "label": "WTI Crude Oil",
@@ -218,11 +218,11 @@
     "dxy": {
       "key": "dxy",
       "status": "live",
-      "value": 99.96,
+      "value": 99.99,
       "date": "2026-08-12",
       "trend": "rising",
-      "change_pct": 0.27,
-      "change_abs": 0.27,
+      "change_pct": 0.3,
+      "change_abs": 0.297,
       "source": "Yahoo:DX-Y.NYB",
       "error": null,
       "label": "US Dollar Index (DXY)",
@@ -231,8 +231,8 @@
     }
   },
   "heat_score": {
-    "score": 21.7,
-    "overheat_subscore": 31.6,
+    "score": 22.8,
+    "overheat_subscore": 33.7,
     "stress_subscore": 11.8,
     "regime": "Low Heat",
     "indicators_used": 9,
