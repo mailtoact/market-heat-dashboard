@@ -239,7 +239,7 @@ function render(data){
   const narrative = (data.interpretation && data.interpretation.narrative) || "";
   const guidance = (data.interpretation && data.interpretation.portfolio_guidance) || {};
 
-  const order = ["wti","y2","y10","y20","y30","spread_10y2y","unemployment","sahm_rule","hy_spread","ig_spread","dxy"];
+  const order = ["vix","wti","y2","y10","y20","y30","spread_10y2y","unemployment","sahm_rule","hy_spread","ig_spread","dxy"];
   const cards = order.map(k => renderCard(data.indicators ? data.indicators[k] : null)).join("");
 
   const guideRows = GUIDE_LABELS.map(([key,label]) =>
