@@ -6,7 +6,7 @@ Fetches macro indicators from two independent sources:
 
   * FRED official API (https://api.stlouisfed.org/fred/series/observations)
     -> WTI, 2Y, 10Y, 20Y, 30Y, Unemployment, Sahm Rule, HY spread, IG spread,
-       10Y-2Y spread (official T10Y2Y series)
+       10Y-2Y spread (official T10Y2Y series), VIX
   * Yahoo Finance chart API
     -> DXY (US Dollar Index)
 
@@ -56,20 +56,8 @@ USER_AGENT = "Mozilla/5.0 (MarketHeatDashboard/5.0; +https://github.com)"
 OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
 
 # FRED series definitions.
-# `n_obs`          = how many recent observations to pull from FRED.
-# `trend_lookback` = how many observations back to compare against for the
-#                     rising/falling call. Daily series (yields, oil, spreads)
-#                     use ~5 obs (about a trading week). Monthly series
-#                     (unemployment, Sahm Rule) use 3 obs (~3 months) so the
-#                     "trend" reflects recent direction, not a year-old base.
-# `change_display` = "pct" for series whose normal range stays comfortably
-#                     away from zero (percentage change is meaningful there),
-#                     or "pp" for series that hover near/cross zero (Sahm
-#                     Rule, 10Y-2Y spread) where a percentage change is
-#                     misleading (e.g. "-111%" on a move from -0.01 to -0.03)
-#                     and a plain percentage-point change is what you'd
-#                     actually want to read.
 FRED_SERIES = {
+    "vix":          {"series_id": "VIXCLS",        "label": "CBOE Volatility Index (VIX)", "unit": "", "n_obs": 30, "decimals": 2, "trend_lookback": 5, "change_display": "pct"},
     "wti":          {"series_id": "DCOILWTICO",   "label": "WTI Crude Oil",        "unit": "$/bbl", "n_obs": 30, "decimals": 2, "trend_lookback": 5, "change_display": "pct"},
     "y2":           {"series_id": "DGS2",          "label": "2Y Treasury Yield",    "unit": "%",     "n_obs": 30, "decimals": 2, "trend_lookback": 5, "change_display": "pct"},
     "y10":          {"series_id": "DGS10",         "label": "10Y Treasury Yield",   "unit": "%",     "n_obs": 30, "decimals": 2, "trend_lookback": 5, "change_display": "pct"},
@@ -112,7 +100,7 @@ def _http_get_json(url, timeout=REQUEST_TIMEOUT, max_retries=MAX_RETRIES):
             last_error = f"Timeout/OS error: {e}"
         except json.JSONDecodeError as e:
             last_error = f"Bad JSON response: {e}"
-        except Exception as e:  # noqa: BLE001 - we deliberately want a catch-all here
+        except Exception as e:  # noqa: BLE001 - catch-all
             last_error = f"Unexpected error: {e}"
 
         if attempt < max_retries:
@@ -164,8 +152,6 @@ def fetch_fred_series(key, series_id, n_obs, trend_lookback=5):
         return result
 
     observations = data["observations"]
-    # FRED uses "." for missing values. Filter down to real numeric observations,
-    # most-recent first (we requested sort_order=desc).
     clean = []
     for obs in observations:
         val_str = obs.get("value", ".")
@@ -185,10 +171,6 @@ def fetch_fred_series(key, series_id, n_obs, trend_lookback=5):
     result["date"] = latest_date
     result["status"] = "live"
 
-    # Trend: compare latest value to the value `trend_lookback` observations
-    # back (a rough "recent direction" window — 5 obs for daily series,
-    # 3 obs for monthly series), falling back to the oldest available point
-    # if we don't have that many.
     lookback_idx = min(trend_lookback, len(clean) - 1)
     if lookback_idx > 0:
         _, past_value = clean[lookback_idx]
@@ -200,8 +182,6 @@ def fetch_fred_series(key, series_id, n_obs, trend_lookback=5):
 
         result["change_pct"] = round(change_pct, 2) if change_pct is not None else None
         result["change_abs"] = round(abs_change, 4)
-        # For spread/rate-style series expressed in percentage points, a tiny
-        # absolute move shouldn't be labeled a strong trend even if % move is large.
         if abs(abs_change) < 1e-9:
             result["trend"] = "flat"
         elif abs_change > 0:
@@ -247,7 +227,6 @@ def fetch_yahoo_ticker(key, ticker):
         result["error"] = "Unexpected Yahoo Finance response shape"
         return result
 
-    # Filter out trailing/leading None closes (holidays, partial days).
     pairs = [(ts, c) for ts, c in zip(timestamps, closes) if c is not None]
     if not pairs:
         result["error"] = "No valid close prices returned"
@@ -278,15 +257,6 @@ def fetch_yahoo_ticker(key, ticker):
 # --------------------------------------------------------------------------
 # Scoring
 # --------------------------------------------------------------------------
-# NOTE: These thresholds are a *placeholder first pass*, deliberately kept
-# simple. Per the project brief, calibration against live V5 data comes
-# only after the pipeline is confirmed reliable (Data Health ~10/10 live).
-# Each indicator produces a 0-100 sub-score on two conceptual axes:
-#   - "overheat" pressure (inflationary / late-cycle heat)
-#   - "stress" pressure (recession / credit-stress risk)
-# The overall Market Heat Score blends both; the regime label uses a small
-# decision layer so that stress signals aren't just averaged away by calm
-# signals elsewhere (see classify_regime()).
 
 def _level_score(value, low, high):
     """Linear-map value into 0-100 between low and high, clamped."""
@@ -306,66 +276,47 @@ def score_indicator(key, res):
     trend = res.get("trend")
     trend_bonus = 8.0 if trend == "rising" else (-8.0 if trend == "falling" else 0.0)
 
-    if key == "wti":
-        # $40 = soft/deflationary floor, $120 = 2022-style inflation-shock
-        # ceiling. Normal range ($55-95) sits mid-scale rather than pinned
-        # near zero, so typical prices don't read as artificially "cool."
+    if key == "vix":
+        # VIX is a pure market stress / fear indicator.
+        # 12 = baseline calm, 35 = severe market distress/panic.
+        overheat = 0.0
+        stress = _level_score(v, 12, 35) + trend_bonus
+        weight = 1.1
+    elif key == "wti":
         overheat = _level_score(v, 40, 120) + trend_bonus
         stress = 0.0
         weight = 1.0
     elif key == "y2":
-        # 0.25% = ZIRP floor, 5.5% = 2023 cycle-peak ceiling (front end is
-        # the most direct read on restrictive Fed policy / inflation fight).
         overheat = _level_score(v, 0.25, 5.5) + trend_bonus
         stress = 0.0
         weight = 1.0
     elif key in ("y10", "y20", "y30"):
-        # 1.5% = modern-era low, 5.25% = 2023 long-end cycle high.
         overheat = _level_score(v, 1.5, 5.25) + trend_bonus
         stress = 0.0
         weight = 0.6
     elif key == "spread_10y2y":
-        # Inverted (negative) curve = building recession risk; deep
-        # inversions in the last two cycles bottomed around -1.0 to -1.1pp,
-        # while a steep positive curve during a healthy expansion can run
-        # +2pp+ without itself being a stress signal (captured by scoring
-        # -v against a moderate ceiling rather than the deep-inversion floor).
-        # A sharp move back toward/through zero after inversion is the
-        # classic late-cycle "un-inversion" stress signal, so we add a bonus
-        # specifically for that steepening-off-a-low-base pattern.
         overheat = 0.0
         stress = _level_score(-v, -2.0, 1.2)
         if trend == "rising" and v < 0.3:
             stress += 10.0  # steepening off an inverted/near-inverted base
         weight = 1.0
     elif key == "unemployment":
-        # 3.5% = full-employment floor, 6.5% = clearly-recessionary ceiling
-        # (Sahm Rule already captures the "rate of rise" trigger separately,
-        # so this level score stays level-focused).
         overheat = 0.0
         stress = _level_score(v, 3.5, 6.5) + (trend_bonus if trend == "rising" else 0.0)
         weight = 1.0
     elif key == "sahm_rule":
         overheat = 0.0
-        # Sahm Rule >= 0.5 is the historical real-time recession trigger;
-        # -0.2 is a typical mid-expansion low.
         stress = _level_score(v, -0.2, 0.5)
         weight = 1.2
     elif key == "hy_spread":
-        # ~2.5pp = post-GFC/2021-style tight extreme, ~9pp = broad-based
-        # credit stress (2008/2020 briefly cleared 8-10pp+ before spiking
-        # further in acute crisis).
         overheat = 0.0
         stress = _level_score(v, 2.5, 9.0) + trend_bonus
         weight = 1.1
     elif key == "ig_spread":
-        # ~0.6pp = tight extreme, ~2.5pp = clear stress widening.
         overheat = 0.0
         stress = _level_score(v, 0.6, 2.5) + trend_bonus
         weight = 0.8
     elif key == "dxy":
-        # Rapid DXY moves in either direction can signal stress (flight to
-        # safety / dollar shortage) more than steady levels do.
         overheat = 0.0
         stress = 0.0
         change_pct = res.get("change_pct") or 0.0
@@ -397,7 +348,7 @@ def classify_regime(overheat_score, stress_score, live_count, total_count):
         "Low Heat": "Conditions look broadly consistent with a normal / soft-landing environment. No dominant inflationary or recessionary signal.",
         "Elevated": "Some indicators are drifting away from normal ranges. Could be early-stage overheating or early-stage growth slowdown — watch trend direction, not just level.",
         "High Heat": "Inflationary / late-cycle pressure indicators (oil, front-end and long-end yields) are elevated and trending up. Overheating risk dominant over recession risk right now.",
-        "Stress": "Recession / financial-stress indicators (credit spreads, unemployment trend, Sahm Rule, yield-curve dynamics) are flashing. Capital-preservation posture warranted over chasing risk.",
+        "Stress": "Recession / financial-stress indicators (credit spreads, VIX, unemployment trend, Sahm Rule, yield-curve dynamics) are flashing. Capital-preservation posture warranted over chasing risk.",
         "Unknown": "Insufficient live data.",
     }
     return regime, narratives[regime]
@@ -554,10 +505,6 @@ def main():
     print(f"Heat Score: {heat_score} ({regime})")
     print(f"Wrote {OUTPUT_PATH}")
 
-    # Never fail the whole workflow just because some feeds were down —
-    # a partial data.json with clear health status is far more useful than
-    # no update at all. Only fail hard on an actual bug (uncaught exception
-    # above would already have stopped us before this point).
     return 0
 
 
