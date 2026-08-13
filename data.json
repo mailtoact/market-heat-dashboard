@@ -1,11 +1,17 @@
 {
-  "generated_at": "2026-08-13T09:01:23Z",
+  "generated_at": "2026-08-13T09:37:34Z",
   "pipeline_version": "V5",
   "data_health": {
-    "live_count": 11,
-    "total_count": 11,
-    "status": "11/11 live",
+    "live_count": 12,
+    "total_count": 12,
+    "status": "12/12 live",
     "detail": [
+      {
+        "key": "vix",
+        "label": "CBOE Volatility Index (VIX)",
+        "status": "live",
+        "error": null
+      },
       {
         "key": "wti",
         "label": "WTI Crude Oil",
@@ -75,6 +81,20 @@
     ]
   },
   "indicators": {
+    "vix": {
+      "key": "vix",
+      "status": "live",
+      "value": 15.28,
+      "date": "2026-08-11",
+      "trend": "falling",
+      "change_pct": -7.39,
+      "change_abs": -1.22,
+      "source": "FRED:VIXCLS",
+      "error": null,
+      "label": "CBOE Volatility Index (VIX)",
+      "unit": "",
+      "change_display": "pct"
+    },
     "wti": {
       "key": "wti",
       "status": "live",
@@ -218,11 +238,11 @@
     "dxy": {
       "key": "dxy",
       "status": "live",
-      "value": 99.97,
+      "value": 99.93,
       "date": "2026-08-13",
       "trend": "falling",
-      "change_pct": -0.0,
-      "change_abs": -0.001,
+      "change_pct": -0.04,
+      "change_abs": -0.035,
       "source": "Yahoo:DX-Y.NYB",
       "error": null,
       "label": "US Dollar Index (DXY)",
@@ -231,12 +251,12 @@
     }
   },
   "heat_score": {
-    "score": 23.1,
-    "overheat_subscore": 34.4,
-    "stress_subscore": 11.8,
+    "score": 21.0,
+    "overheat_subscore": 30.8,
+    "stress_subscore": 11.2,
     "regime": "Low Heat",
-    "indicators_used": 9,
-    "indicators_total": 11
+    "indicators_used": 10,
+    "indicators_total": 12
   },
   "interpretation": {
     "narrative": "Conditions look broadly consistent with a normal / soft-landing environment. No dominant inflationary or recessionary signal.",
