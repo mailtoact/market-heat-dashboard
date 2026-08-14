@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T21:03:01Z",
+  "generated_at": "2026-08-14T21:56:15Z",
   "pipeline_version": "V5",
   "data_health": {
     "live_count": 12,
@@ -168,11 +168,11 @@
     "spread_10y2y": {
       "key": "spread_10y2y",
       "status": "live",
-      "value": 0.48,
-      "date": "2026-08-13",
+      "value": 0.51,
+      "date": "2026-08-14",
       "trend": "rising",
-      "change_pct": 9.09,
-      "change_abs": 0.04,
+      "change_pct": 10.87,
+      "change_abs": 0.05,
       "source": "FRED:T10Y2Y",
       "error": null,
       "label": "10Y-2Y Spread",
@@ -238,11 +238,11 @@
     "dxy": {
       "key": "dxy",
       "status": "live",
-      "value": 99.65,
+      "value": 99.64,
       "date": "2026-08-14",
       "trend": "rising",
-      "change_pct": 0.05,
-      "change_abs": 0.046,
+      "change_pct": 0.04,
+      "change_abs": 0.036,
       "source": "Yahoo:DX-Y.NYB",
       "error": null,
       "label": "US Dollar Index (DXY)",
@@ -251,9 +251,9 @@
     }
   },
   "heat_score": {
-    "score": 19.2,
+    "score": 19.1,
     "overheat_subscore": 27.1,
-    "stress_subscore": 11.3,
+    "stress_subscore": 11.2,
     "regime": "Low Heat",
     "indicators_used": 10,
     "indicators_total": 12
