@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:02:47Z",
+  "generated_at": "2026-08-14T15:01:48Z",
   "pipeline_version": "V5",
   "data_health": {
     "live_count": 12,
@@ -238,11 +238,11 @@
     "dxy": {
       "key": "dxy",
       "status": "live",
-      "value": 99.49,
+      "value": 99.53,
       "date": "2026-08-14",
       "trend": "falling",
-      "change_pct": -0.11,
-      "change_abs": -0.106,
+      "change_pct": -0.07,
+      "change_abs": -0.074,
       "source": "Yahoo:DX-Y.NYB",
       "error": null,
       "label": "US Dollar Index (DXY)",
