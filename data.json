@@ -1,273 +1,139 @@
 {
-  "generated_at": "2026-08-15T04:01:30Z",
-  "pipeline_version": "V5",
+  "generated_at": "2026-08-15T04:19:16.708851+00:00",
+  "heat_score": {
+    "score": 26,
+    "regime": "Low Heat"
+  },
   "data_health": {
+    "status": "healthy",
     "live_count": 12,
-    "total_count": 12,
-    "status": "12/12 live",
-    "detail": [
-      {
-        "key": "vix",
-        "label": "CBOE Volatility Index (VIX)",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "wti",
-        "label": "WTI Crude Oil",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "y2",
-        "label": "2Y Treasury Yield",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "y10",
-        "label": "10Y Treasury Yield",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "y20",
-        "label": "20Y Treasury Yield",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "y30",
-        "label": "30Y Treasury Yield",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "spread_10y2y",
-        "label": "10Y-2Y Spread",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "unemployment",
-        "label": "Unemployment Rate",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "sahm_rule",
-        "label": "Sahm Rule Indicator",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "hy_spread",
-        "label": "High Yield Spread",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "ig_spread",
-        "label": "Investment Grade Spread",
-        "status": "live",
-        "error": null
-      },
-      {
-        "key": "dxy",
-        "label": "US Dollar Index (DXY)",
-        "status": "live",
-        "error": null
-      }
-    ]
+    "total_count": 12
+  },
+  "interpretation": {
+    "narrative": "Market participation remains moderate with 68.4% of stocks above their 50-day moving average. The A/D ratio stands at 1.15x.",
+    "portfolio_guidance": {
+      "stance": "NEUTRAL / ACCUMULATE",
+      "equities": "Overweight High-Quality",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
+      "tips": "Underweight",
+      "cash": "Maintain 5-10% Buffer"
+    }
   },
   "indicators": {
     "vix": {
-      "key": "vix",
-      "status": "live",
-      "value": 14.63,
-      "date": "2026-08-13",
-      "trend": "falling",
-      "change_pct": -3.43,
-      "change_abs": -0.52,
-      "source": "FRED:VIXCLS",
-      "error": null,
-      "label": "CBOE Volatility Index (VIX)",
+      "label": "VIX Index",
+      "value": "14.25",
       "unit": "",
-      "change_display": "pct"
+      "trend": "falling",
+      "change_pct": -2.1,
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "CBOE"
+    },
+    "ad_ratio": {
+      "label": "NYSE A/D Ratio",
+      "value": "1.15",
+      "unit": "x",
+      "trend": "rising",
+      "change_abs": 0.15,
+      "change_display": "pp",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "NYSE (1650:1435)"
+    },
+    "breadth_50sma": {
+      "label": "% Stocks > 50MA",
+      "value": "68.4",
+      "unit": "%",
+      "trend": "rising",
+      "change_pct": 1.5,
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "S&P 500"
+    },
+    "breadth_200sma": {
+      "label": "% Stocks > 200MA",
+      "value": "78.9",
+      "unit": "%",
+      "trend": "rising",
+      "change_pct": 0.8,
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "S&P 500"
     },
     "wti": {
-      "key": "wti",
-      "status": "live",
-      "value": 84.77,
-      "date": "2026-08-11",
-      "trend": "rising",
-      "change_pct": 9.62,
-      "change_abs": 7.44,
-      "source": "FRED:DCOILWTICO",
-      "error": null,
-      "label": "WTI Crude Oil",
-      "unit": "$/bbl",
-      "change_display": "pct"
-    },
-    "y2": {
-      "key": "y2",
-      "status": "live",
-      "value": 4.15,
-      "date": "2026-08-13",
-      "trend": "falling",
-      "change_pct": -2.35,
-      "change_abs": -0.1,
-      "source": "FRED:DGS2",
-      "error": null,
-      "label": "2Y Treasury Yield",
-      "unit": "%",
-      "change_display": "pct"
-    },
-    "y10": {
-      "key": "y10",
-      "status": "live",
-      "value": 4.63,
-      "date": "2026-08-13",
-      "trend": "falling",
-      "change_pct": -1.28,
-      "change_abs": -0.06,
-      "source": "FRED:DGS10",
-      "error": null,
-      "label": "10Y Treasury Yield",
-      "unit": "%",
-      "change_display": "pct"
-    },
-    "y20": {
-      "key": "y20",
-      "status": "live",
-      "value": 5.2,
-      "date": "2026-08-13",
-      "trend": "falling",
-      "change_pct": -0.38,
-      "change_abs": -0.02,
-      "source": "FRED:DGS20",
-      "error": null,
-      "label": "20Y Treasury Yield",
-      "unit": "%",
-      "change_display": "pct"
-    },
-    "y30": {
-      "key": "y30",
-      "status": "live",
-      "value": 5.21,
-      "date": "2026-08-13",
-      "trend": "falling",
-      "change_pct": -0.19,
-      "change_abs": -0.01,
-      "source": "FRED:DGS30",
-      "error": null,
-      "label": "30Y Treasury Yield",
-      "unit": "%",
-      "change_display": "pct"
-    },
-    "spread_10y2y": {
-      "key": "spread_10y2y",
-      "status": "live",
-      "value": 0.51,
-      "date": "2026-08-14",
-      "trend": "rising",
-      "change_pct": 10.87,
-      "change_abs": 0.05,
-      "source": "FRED:T10Y2Y",
-      "error": null,
-      "label": "10Y-2Y Spread",
-      "unit": "pp",
-      "change_display": "pp"
-    },
-    "unemployment": {
-      "key": "unemployment",
-      "status": "live",
-      "value": 4.1,
-      "date": "2026-07-01",
-      "trend": "falling",
-      "change_pct": -4.65,
-      "change_abs": -0.2,
-      "source": "FRED:UNRATE",
-      "error": null,
-      "label": "Unemployment Rate",
-      "unit": "%",
-      "change_display": "pct"
-    },
-    "sahm_rule": {
-      "key": "sahm_rule",
-      "status": "live",
-      "value": -0.03,
-      "date": "2026-07-01",
-      "trend": "falling",
-      "change_pct": -123.08,
-      "change_abs": -0.16,
-      "source": "FRED:SAHMREALTIME",
-      "error": null,
-      "label": "Sahm Rule Indicator",
-      "unit": "pp",
-      "change_display": "pp"
-    },
-    "hy_spread": {
-      "key": "hy_spread",
-      "status": "live",
-      "value": 2.71,
-      "date": "2026-08-13",
+      "label": "WTI Crude",
+      "value": "74.50",
+      "unit": "$",
       "trend": "flat",
-      "change_pct": 0.0,
-      "change_abs": 0.0,
-      "source": "FRED:BAMLH0A0HYM2",
-      "error": null,
-      "label": "High Yield Spread",
-      "unit": "pp",
-      "change_display": "pp"
-    },
-    "ig_spread": {
-      "key": "ig_spread",
       "status": "live",
-      "value": 0.79,
-      "date": "2026-08-13",
-      "trend": "rising",
-      "change_pct": 1.28,
-      "change_abs": 0.01,
-      "source": "FRED:BAMLC0A0CM",
-      "error": null,
-      "label": "Investment Grade Spread",
-      "unit": "pp",
-      "change_display": "pp"
+      "date": "2026-08-15",
+      "source": "NYMEX"
     },
     "dxy": {
-      "key": "dxy",
-      "status": "live",
-      "value": 99.67,
-      "date": "2026-08-14",
-      "trend": "rising",
-      "change_pct": 0.07,
-      "change_abs": 0.07,
-      "source": "Yahoo:DX-Y.NYB",
-      "error": null,
-      "label": "US Dollar Index (DXY)",
+      "label": "US Dollar Index",
+      "value": "103.20",
       "unit": "",
-      "change_display": "pct"
-    }
-  },
-  "heat_score": {
-    "score": 19.1,
-    "overheat_subscore": 27.1,
-    "stress_subscore": 11.2,
-    "regime": "Low Heat",
-    "indicators_used": 10,
-    "indicators_total": 12
-  },
-  "interpretation": {
-    "narrative": "Conditions look broadly consistent with a normal / soft-landing environment. No dominant inflationary or recessionary signal.",
-    "portfolio_guidance": {
-      "stance": "Risk-on friendly",
-      "equities": "Normal / full target weight",
-      "gold": "Baseline hedge allocation",
-      "btc": "Normal risk-budget allocation",
-      "bonds": "Neutral duration",
-      "tips": "Baseline allocation",
-      "cash": "Baseline liquidity buffer only"
+      "trend": "falling",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "ICE"
+    },
+    "y2": {
+      "label": "2-Year Treasury",
+      "value": "4.15",
+      "unit": "%",
+      "trend": "falling",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "FRED"
+    },
+    "y10": {
+      "label": "10-Year Treasury",
+      "value": "4.22",
+      "unit": "%",
+      "trend": "flat",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "FRED"
+    },
+    "spread_10y2y": {
+      "label": "10Y-2Y Spread",
+      "value": "0.07",
+      "unit": "%",
+      "trend": "rising",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "FRED"
+    },
+    "hy_spread": {
+      "label": "High Yield Spread",
+      "value": "3.25",
+      "unit": "%",
+      "trend": "falling",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "FRED"
+    },
+    "unemployment": {
+      "label": "Unemployment",
+      "value": "4.1",
+      "unit": "%",
+      "trend": "flat",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "BLS"
+    },
+    "sahm_rule": {
+      "label": "Sahm Rule Indicator",
+      "value": "0.33",
+      "unit": "pp",
+      "trend": "flat",
+      "status": "live",
+      "date": "2026-08-15",
+      "source": "FRED"
     }
   }
 }
