@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T14:00:44.862600+00:00",
+  "generated_at": "2026-08-17T15:01:51.562172+00:00",
   "heat_score": {
     "score": 43,
     "regime": "Elevated"
@@ -24,7 +24,7 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "14.98",
+      "value": "14.97",
       "unit": "",
       "trend": "falling",
       "change_pct": -2.1,
@@ -55,7 +55,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "66.7",
+      "value": "69.2",
       "unit": "%",
       "trend": "rising",
       "change_pct": 0.8,
