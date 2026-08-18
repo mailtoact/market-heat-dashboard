@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T04:02:17.238778+00:00",
+  "generated_at": "2026-08-18T05:00:48.248296+00:00",
   "heat_score": {
-    "score": 34,
+    "score": 32,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -24,7 +24,7 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.19",
+      "value": "14.25",
       "unit": "",
       "trend": "falling",
       "change_pct": -2.1,
