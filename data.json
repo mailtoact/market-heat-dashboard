@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-19T14:09:05.511913+00:00",
+  "generated_at": "2026-08-19T15:00:47.224204+00:00",
   "heat_score": {
-    "score": 18,
+    "score": 17,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 69.2% above 50MA with an A/D ratio of 3.33x.",
+    "narrative": "Market participation stands at 69.2% above 50MA with an A/D ratio of 5.5x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / ACCUMULATE",
       "equities": "Overweight High-Quality",
@@ -24,7 +24,7 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.43",
+      "value": "15.21",
       "unit": "",
       "trend": "falling",
       "change_pct": -2.1,
@@ -34,14 +34,14 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.33",
+      "value": "5.5",
       "unit": "x",
       "trend": "rising",
-      "change_abs": 2.33,
+      "change_abs": 4.5,
       "change_display": "pp",
       "status": "live",
       "date": "2026-08-19",
-      "source": "S&P Sample (30:9)"
+      "source": "S&P Sample (33:6)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -55,7 +55,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "79.5",
+      "value": "76.9",
       "unit": "%",
       "trend": "rising",
       "change_pct": 0.8,
