@@ -117,7 +117,51 @@ def compute_heat_score(indicators):
     elif final_score >= 35: regime = "Elevated"
 
     return final_score, regime
-
+    
+def get_dynamic_guidance(score, regime):
+    """
+    Generates dynamic asset allocation guidance based on system heat score.
+    """
+    if score >= 75:  # STRESS REGIME (Severe Market Washout / High Risk)
+        return {
+            "stance": "DEFENSIVE / CAPITAL PRESERVATION",
+            "equities": "Underweight (Focus on High Quality / Low Beta)",
+            "gold": "Overweight (Hedge Against Volatility)",
+            "btc": "Underweight / Cash Neutral",
+            "bonds": "Overweight Long Duration (Flight to Safety)",
+            "tips": "Neutral",
+            "cash": "Elevated (15-20% Buffer)"
+        }
+    elif score >= 55:  # HIGH HEAT REGIME (Deteriorating Breadth / Caution)
+        return {
+            "stance": "CAUTIOUS / HEDGE RISKS",
+            "equities": "Neutral / Selective Quality",
+            "gold": "Accumulate on Dips",
+            "btc": "Tactical / Reduced Sizing",
+            "bonds": "Overweight Intermediate Duration",
+            "tips": "Neutral",
+            "cash": "Raise Cash (10-15% Buffer)"
+        }
+    elif score >= 35:  # ELEVATED REGIME (Moderate Heat / Caution)
+        return {
+            "stance": "NEUTRAL / TACTICAL",
+            "equities": "Core Allocation (High-Quality Growth)",
+            "gold": "Hold Core Position",
+            "btc": "Tactical Allocation",
+            "bonds": "Neutral Duration",
+            "tips": "Underweight",
+            "cash": "Maintain Standard Buffer (5-10%)"
+        }
+    else:  # LOW HEAT REGIME (0 - 34: Healthy Participation / Risk-On)
+        return {
+            "stance": "BULLISH / ACCUMULATE",
+            "equities": "Overweight Broad Equities & Growth",
+            "gold": "Hold Core Strategic Allocation",
+            "btc": "Overweight / Risk-On Tilt",
+            "bonds": "Neutral / Yield-Focused Short Duration",
+            "tips": "Underweight",
+            "cash": "Deploy Excess Cash (5% Minimum)"
+        }
 def build_data_json():
     print("Pulling market metrics...")
     today_str = datetime.date.today().isoformat()
