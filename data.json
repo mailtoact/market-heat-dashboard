@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T02:12:02.326513+00:00",
+  "generated_at": "2026-08-25T02:18:57.085499+00:00",
   "heat_score": {
     "score": 21,
     "regime": "Low Heat"
@@ -12,13 +12,13 @@
   "interpretation": {
     "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 2.22x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / ACCUMULATE",
-      "equities": "Overweight High-Quality",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain 5-10% Buffer"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.63",
+      "value": "85.62",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.03",
+      "value": "99.01",
       "unit": "",
       "trend": "rising",
       "status": "live",
