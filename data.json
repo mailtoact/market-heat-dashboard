@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T20:00:44.330290+00:00",
+  "generated_at": "2026-08-25T21:00:49.673883+00:00",
   "heat_score": {
-    "score": 34,
+    "score": 33,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.93x.",
+    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 1.0x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -34,12 +34,12 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.93",
+      "value": "1.0",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-08-25",
-      "source": "S&P Sample (14:15)"
+      "source": "S&P Sample (14:14)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "81.7",
+      "value": "81.08",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "98.91",
+      "value": "98.9",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -81,16 +81,16 @@
       "label": "2-Year Treasury",
       "value": "4.24",
       "unit": "%",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-08-25",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "4.74",
+      "value": "4.7",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-25",
       "source": "FRED"
