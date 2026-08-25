@@ -6,7 +6,7 @@ import pandas as pd
 import yfinance as yf
 
 def fetch_breadth_and_ad():
-    """Dynamically calculates Market Breadth and A/D Ratio."""
+    """Dynamically calculates Market Breadth and A/D Ratio from an S&P sample."""
     tickers = [
         "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "BRK-B", "JPM", "V", 
         "TSLA", "UNH", "XOM", "JNJ", "PG", "HD", "MA", "COST", "ABBV", "MRK",
@@ -117,22 +117,20 @@ def compute_heat_score(indicators):
     elif final_score >= 35: regime = "Elevated"
 
     return final_score, regime
-    
+
 def get_dynamic_guidance(score, regime):
-    """
-    Generates dynamic asset allocation guidance based on system heat score.
-    """
-    if score >= 75:  # STRESS REGIME (Severe Market Washout / High Risk)
+    """Generates dynamic asset allocation guidance based on system heat score."""
+    if score >= 75:
         return {
             "stance": "DEFENSIVE / CAPITAL PRESERVATION",
-            "equities": "Underweight (Focus on High Quality / Low Beta)",
-            "gold": "Overweight (Hedge Against Volatility)",
+            "equities": "Underweight (Focus on Low Beta / Defensive)",
+            "gold": "Overweight (Hedge Volatility)",
             "btc": "Underweight / Cash Neutral",
-            "bonds": "Overweight Long Duration (Flight to Safety)",
+            "bonds": "Overweight Long Duration",
             "tips": "Neutral",
             "cash": "Elevated (15-20% Buffer)"
         }
-    elif score >= 55:  # HIGH HEAT REGIME (Deteriorating Breadth / Caution)
+    elif score >= 55:
         return {
             "stance": "CAUTIOUS / HEDGE RISKS",
             "equities": "Neutral / Selective Quality",
@@ -142,7 +140,7 @@ def get_dynamic_guidance(score, regime):
             "tips": "Neutral",
             "cash": "Raise Cash (10-15% Buffer)"
         }
-    elif score >= 35:  # ELEVATED REGIME (Moderate Heat / Caution)
+    elif score >= 35:
         return {
             "stance": "NEUTRAL / TACTICAL",
             "equities": "Core Allocation (High-Quality Growth)",
@@ -152,16 +150,17 @@ def get_dynamic_guidance(score, regime):
             "tips": "Underweight",
             "cash": "Maintain Standard Buffer (5-10%)"
         }
-    else:  # LOW HEAT REGIME (0 - 34: Healthy Participation / Risk-On)
+    else:
         return {
             "stance": "BULLISH / ACCUMULATE",
             "equities": "Overweight Broad Equities & Growth",
             "gold": "Hold Core Strategic Allocation",
             "btc": "Overweight / Risk-On Tilt",
-            "bonds": "Neutral / Yield-Focused Short Duration",
+            "bonds": "Neutral / Short Duration Yield",
             "tips": "Underweight",
             "cash": "Deploy Excess Cash (5% Minimum)"
         }
+
 def build_data_json():
     print("Pulling market metrics...")
     today_str = datetime.date.today().isoformat()
@@ -169,7 +168,7 @@ def build_data_json():
     ba_data = fetch_breadth_and_ad()
     mkt_data = fetch_live_market_data()
     
-    # FRED Macro Series Fetching
+    # FRED Macro Series Fetching with Safe Defaults
     y2_fred = fetch_fred_series("DGS2") or {"val": "4.15", "trend": "falling", "status": "live"}
     y10_fred = fetch_fred_series("DGS10") or {"val": "4.22", "trend": "flat", "status": "live"}
     spread_fred = fetch_fred_series("T10Y2Y") or {"val": "0.07", "trend": "rising", "status": "live"}
@@ -230,6 +229,7 @@ def build_data_json():
     }
 
     score, regime = compute_heat_score(indicators)
+    guidance = get_dynamic_guidance(score, regime)
     live_count = sum(1 for v in indicators.values() if v.get("status") == "live")
 
     payload = {
@@ -245,15 +245,7 @@ def build_data_json():
         },
         "interpretation": {
             "narrative": f"Market participation stands at {ba_data['breadth_50']}% above 50MA with an A/D ratio of {ba_data['ad_ratio']}x.",
-            "portfolio_guidance": {
-                "stance": "NEUTRAL / ACCUMULATE",
-                "equities": "Overweight High-Quality",
-                "gold": "Hold Core Position",
-                "btc": "Tactical Allocation",
-                "bonds": "Neutral Duration",
-                "tips": "Underweight",
-                "cash": "Maintain 5-10% Buffer"
-            }
+            "portfolio_guidance": guidance
         },
         "indicators": indicators
     }
@@ -261,7 +253,7 @@ def build_data_json():
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
-    print("Successfully generated data.json with Heat Score and FRED indicators!")
+    print("Successfully generated fully dynamic data.json!")
 
 if __name__ == "__main__":
     build_data_json()
