@@ -1,100 +1,75 @@
 {
-  "generated_at": "2026-08-25T02:00:47.997938+00:00",
-  "heat_score": {
-    "score": 24,
-    "regime": "Low Heat"
-  },
-  "data_health": {
-    "status": "healthy",
-    "live_count": 12,
-    "total_count": 12
-  },
-  "interpretation": {
-    "narrative": "Market participation stands at 66.7% above 50MA with an A/D ratio of 1.79x.",
-    "portfolio_guidance": {
-      "stance": "NEUTRAL / ACCUMULATE",
-      "equities": "Overweight High-Quality",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
-      "tips": "Underweight",
-      "cash": "Maintain 5-10% Buffer"
-    }
-  },
+  "generated_at": "2026-08-25T02:09:12.959889+00:00",
   "indicators": {
     "vix": {
       "label": "VIX Index",
       "value": "15.85",
       "unit": "",
-      "trend": "falling",
-      "change_pct": -2.1,
+      "trend": "rising",
+      "change_pct": 4.76,
       "status": "live",
       "date": "2026-08-25",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.79",
+      "value": "2.22",
       "unit": "x",
       "trend": "rising",
-      "change_abs": 0.79,
-      "change_display": "pp",
       "status": "live",
       "date": "2026-08-25",
-      "source": "S&P Sample (25:14)"
+      "source": "S&P Sample (20:9)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "66.7",
+      "value": "69.0",
       "unit": "%",
       "trend": "rising",
-      "change_pct": 1.5,
       "status": "live",
       "date": "2026-08-25",
       "source": "S&P 500"
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "76.9",
+      "value": "75.9",
       "unit": "%",
       "trend": "rising",
-      "change_pct": 0.8,
       "status": "live",
       "date": "2026-08-25",
       "source": "S&P 500"
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "74.50",
+      "value": "85.45",
       "unit": "$",
-      "trend": "flat",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-25",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.20",
+      "value": "99.03",
       "unit": "",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-08-25",
       "source": "ICE"
+    },
+    "y10": {
+      "label": "10-Year Treasury",
+      "value": "0.47",
+      "unit": "%",
+      "trend": "falling",
+      "status": "live",
+      "date": "2026-08-25",
+      "source": "CBOE"
     },
     "y2": {
       "label": "2-Year Treasury",
       "value": "4.15",
       "unit": "%",
       "trend": "falling",
-      "status": "live",
-      "date": "2026-08-25",
-      "source": "FRED"
-    },
-    "y10": {
-      "label": "10-Year Treasury",
-      "value": "4.22",
-      "unit": "%",
-      "trend": "flat",
       "status": "live",
       "date": "2026-08-25",
       "source": "FRED"
