@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T23:58:40.233189+00:00",
+  "generated_at": "2026-08-26T00:00:46.371534+00:00",
   "heat_score": {
     "score": 33,
     "regime": "Low Heat"
@@ -29,7 +29,7 @@
       "trend": "falling",
       "change_pct": -2.52,
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "CBOE"
     },
     "ad_ratio": {
@@ -38,7 +38,7 @@
       "unit": "x",
       "trend": "rising",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "S&P Sample (14:14)"
     },
     "breadth_50sma": {
@@ -47,7 +47,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "S&P 500"
     },
     "breadth_200sma": {
@@ -56,16 +56,16 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "S&P 500"
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "81.05",
+      "value": "81.07",
       "unit": "$",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "NYMEX"
     },
     "dxy": {
@@ -74,7 +74,7 @@
       "unit": "",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "ICE"
     },
     "y2": {
@@ -83,7 +83,7 @@
       "unit": "%",
       "trend": "flat",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "FRED"
     },
     "y10": {
@@ -92,7 +92,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "FRED"
     },
     "spread_10y2y": {
@@ -101,7 +101,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "FRED"
     },
     "hy_spread": {
@@ -110,7 +110,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "FRED"
     },
     "unemployment": {
@@ -119,7 +119,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "BLS"
     },
     "sahm_rule": {
@@ -128,7 +128,7 @@
       "unit": "pp",
       "trend": "falling",
       "status": "live",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "FRED"
     }
   }
