@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T18:00:53.642410+00:00",
+  "generated_at": "2026-08-26T19:00:55.208681+00:00",
   "heat_score": {
-    "score": 39,
-    "regime": "Elevated"
+    "score": 34,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,36 +10,36 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.81x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.4",
+      "value": "15.41",
       "unit": "",
       "trend": "falling",
-      "change_pct": -0.32,
+      "change_pct": -0.26,
       "status": "live",
       "date": "2026-08-26",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.53",
+      "value": "0.81",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-08-26",
-      "source": "S&P Sample (10:19)"
+      "source": "S&P Sample (13:16)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,9 +61,9 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "82.61",
+      "value": "82.0",
       "unit": "$",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-26",
       "source": "NYMEX"
