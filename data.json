@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T03:00:45.626607+00:00",
+  "generated_at": "2026-08-31T03:18:01.735107+00:00",
   "heat_score": {
     "score": 17,
     "regime": "Low Heat"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.38",
+      "value": "85.12",
       "unit": "$",
       "trend": "rising",
       "status": "live",
