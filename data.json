@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-31T21:17:56.123863+00:00",
+  "generated_at": "2026-08-31T22:00:45.635057+00:00",
   "heat_score": {
-    "score": 26,
-    "regime": "Low Heat"
+    "score": 38,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 1.42x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
@@ -27,19 +27,19 @@
       "value": "14.92",
       "unit": "",
       "trend": "rising",
-      "change_pct": 2.83,
+      "change_pct": 3.4,
       "status": "live",
       "date": "2026-08-31",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.42",
+      "value": "0.53",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-31",
-      "source": "S&P Sample (17:12)"
+      "source": "S&P Sample (10:19)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -70,9 +70,9 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.42",
+      "value": "99.41",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-31",
       "source": "ICE"
