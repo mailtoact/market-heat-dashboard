@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-31T20:17:58.609106+00:00",
+  "generated_at": "2026-08-31T21:00:45.444741+00:00",
   "heat_score": {
-    "score": 26,
-    "regime": "Low Heat"
+    "score": 38,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,36 +10,36 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 1.42x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "14.89",
+      "value": "14.92",
       "unit": "",
       "trend": "rising",
-      "change_pct": 2.62,
+      "change_pct": 3.4,
       "status": "live",
       "date": "2026-08-31",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.42",
+      "value": "0.53",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-31",
-      "source": "S&P Sample (17:12)"
+      "source": "S&P Sample (10:19)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.95",
+      "value": "86.34",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -72,14 +72,14 @@
       "label": "US Dollar Index",
       "value": "99.42",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-08-31",
       "source": "ICE"
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.2",
+      "value": "4.34",
       "unit": "%",
       "trend": "rising",
       "status": "live",
