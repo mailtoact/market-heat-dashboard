@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-01T15:00:44.460313+00:00",
+  "generated_at": "2026-09-01T15:43:21.268978+00:00",
   "heat_score": {
-    "score": 32,
+    "score": 33,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.93x.",
+    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 0.81x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.35",
+      "value": "15.36",
       "unit": "",
       "trend": "rising",
-      "change_pct": 2.88,
+      "change_pct": 2.95,
       "status": "live",
       "date": "2026-09-01",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.93",
+      "value": "0.81",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-01",
-      "source": "S&P Sample (14:15)"
+      "source": "S&P Sample (13:16)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "69.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "87.62",
+      "value": "88.15",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.58",
+      "value": "99.64",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "2.6",
+      "value": "2.63",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-09-01",
       "source": "FRED"
