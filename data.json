@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T21:00:47.858254+00:00",
+  "generated_at": "2026-09-01T21:22:50.834561+00:00",
   "heat_score": {
     "score": 41,
     "regime": "Elevated"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "90.67",
+      "value": "90.68",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -97,9 +97,9 @@
     },
     "spread_10y2y": {
       "label": "10Y-2Y Spread",
-      "value": "0.41",
+      "value": "0.4",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-01",
       "source": "FRED"
