@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T16:41:53.268772+00:00",
+  "generated_at": "2026-09-01T17:00:48.136693+00:00",
   "heat_score": {
-    "score": 31,
-    "regime": "Low Heat"
+    "score": 41,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 0.93x.",
+    "narrative": "Market participation stands at 58.6% above 50MA with an A/D ratio of 0.61x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.64",
+      "value": "15.97",
       "unit": "",
       "trend": "rising",
-      "change_pct": 4.83,
+      "change_pct": 7.04,
       "status": "live",
       "date": "2026-09-01",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.93",
+      "value": "0.61",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-01",
-      "source": "S&P Sample (14:15)"
+      "source": "S&P Sample (11:18)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "69.0",
+      "value": "58.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "89.85",
+      "value": "89.35",
       "unit": "$",
       "trend": "rising",
       "status": "live",
