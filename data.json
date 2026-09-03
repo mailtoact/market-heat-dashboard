@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T21:22:50.284815+00:00",
+  "generated_at": "2026-09-03T22:00:42.941322+00:00",
   "heat_score": {
     "score": 21,
     "regime": "Low Heat"
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "98.98",
+      "value": "99.0",
       "unit": "",
       "trend": "falling",
       "status": "live",
