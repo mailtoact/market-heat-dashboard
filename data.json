@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-04T13:24:20.994846+00:00",
+  "generated_at": "2026-09-04T14:00:50.658896+00:00",
   "heat_score": {
-    "score": 18,
-    "regime": "Low Heat"
+    "score": 40,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.9x.",
+    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 0.12x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
@@ -34,16 +34,16 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.9",
+      "value": "0.12",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-04",
-      "source": "S&P Sample (19:10)"
+      "source": "S&P Sample (3:25)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "72.4",
+      "value": "69.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "90.38",
+      "value": "88.97",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.25",
+      "value": "99.07",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -117,14 +117,14 @@
       "label": "Unemployment",
       "value": "4.1",
       "unit": "%",
-      "trend": "falling",
+      "trend": "flat",
       "status": "live",
       "date": "2026-09-04",
       "source": "BLS"
     },
     "sahm_rule": {
       "label": "Sahm Rule Indicator",
-      "value": "-0.03",
+      "value": "-0.07",
       "unit": "pp",
       "trend": "falling",
       "status": "live",
