@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-04T23:20:34.209842+00:00",
+  "generated_at": "2026-09-05T00:00:45.637562+00:00",
   "heat_score": {
-    "score": 42,
-    "regime": "Elevated"
+    "score": 19,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.21x.",
+    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.9x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
@@ -29,25 +29,25 @@
       "trend": "rising",
       "change_pct": 1.47,
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.21",
+      "value": "1.9",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
-      "date": "2026-09-04",
-      "source": "S&P Sample (5:24)"
+      "date": "2026-09-05",
+      "source": "S&P Sample (19:10)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "72.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "S&P 500"
     },
     "breadth_200sma": {
@@ -56,7 +56,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "S&P 500"
     },
     "wti": {
@@ -65,7 +65,7 @@
       "unit": "$",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "NYMEX"
     },
     "dxy": {
@@ -74,7 +74,7 @@
       "unit": "",
       "trend": "rising",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "ICE"
     },
     "y2": {
@@ -83,7 +83,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "FRED"
     },
     "y10": {
@@ -92,7 +92,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "FRED"
     },
     "spread_10y2y": {
@@ -101,7 +101,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "FRED"
     },
     "hy_spread": {
@@ -110,7 +110,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "FRED"
     },
     "unemployment": {
@@ -119,7 +119,7 @@
       "unit": "%",
       "trend": "flat",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "BLS"
     },
     "sahm_rule": {
@@ -128,7 +128,7 @@
       "unit": "pp",
       "trend": "falling",
       "status": "live",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "source": "FRED"
     }
   }
