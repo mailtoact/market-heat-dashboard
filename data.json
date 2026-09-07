@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:00:45.187176+00:00",
+  "generated_at": "2026-09-07T08:27:22.653319+00:00",
   "heat_score": {
     "score": 43,
     "regime": "Elevated"
@@ -24,10 +24,10 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.05",
+      "value": "15.02",
       "unit": "",
       "trend": "rising",
-      "change_pct": 3.58,
+      "change_pct": 3.37,
       "status": "live",
       "date": "2026-09-07",
       "source": "CBOE"
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.09",
+      "value": "98.9",
       "unit": "",
       "trend": "falling",
       "status": "live",
