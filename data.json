@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-10T14:00:47.633901+00:00",
+  "generated_at": "2026-09-10T14:24:19.943032+00:00",
   "heat_score": {
-    "score": 43,
+    "score": 45,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.61x.",
+    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.53x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "17.68",
+      "value": "17.98",
       "unit": "",
       "trend": "rising",
-      "change_pct": 7.41,
+      "change_pct": 9.23,
       "status": "live",
       "date": "2026-09-10",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.61",
+      "value": "0.53",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-10",
-      "source": "S&P Sample (11:18)"
+      "source": "S&P Sample (10:19)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "99.33",
+      "value": "99.4",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "98.99",
+      "value": "98.96",
       "unit": "",
       "trend": "rising",
       "status": "live",
