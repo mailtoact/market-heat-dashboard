@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:00:45.319027+00:00",
+  "generated_at": "2026-09-11T09:37:40.322733+00:00",
   "heat_score": {
     "score": 45,
     "regime": "Elevated"
@@ -24,10 +24,10 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "17.47",
+      "value": "17.25",
       "unit": "",
       "trend": "falling",
-      "change_pct": -2.07,
+      "change_pct": -3.31,
       "status": "live",
       "date": "2026-09-11",
       "source": "CBOE"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "99.98",
+      "value": "100.13",
       "unit": "$",
       "trend": "falling",
       "status": "live",
