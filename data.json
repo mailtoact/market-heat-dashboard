@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T18:00:43.202381+00:00",
+  "generated_at": "2026-09-15T18:09:43.033252+00:00",
   "heat_score": {
     "score": 46,
     "regime": "Elevated"
@@ -24,10 +24,10 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "17.6",
+      "value": "17.58",
       "unit": "",
       "trend": "rising",
-      "change_pct": 2.92,
+      "change_pct": 2.81,
       "status": "live",
       "date": "2026-09-15",
       "source": "CBOE"
