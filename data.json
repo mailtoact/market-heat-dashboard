@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-16T14:56:58.453977+00:00",
+  "generated_at": "2026-09-16T15:00:45.552930+00:00",
   "heat_score": {
-    "score": 36,
-    "regime": "Elevated"
+    "score": 33,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.93x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 1.07x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "16.78",
+      "value": "16.73",
       "unit": "",
       "trend": "falling",
-      "change_pct": -2.44,
+      "change_pct": -2.73,
       "status": "live",
       "date": "2026-09-16",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.93",
+      "value": "1.07",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-09-16",
-      "source": "S&P Sample (14:15)"
+      "source": "S&P Sample (15:14)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "62.1",
+      "value": "65.5",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "99.66",
+      "value": "99.67",
       "unit": "",
       "trend": "rising",
       "status": "live",
