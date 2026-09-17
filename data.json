@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T03:00:49.366485+00:00",
+  "generated_at": "2026-09-17T04:00:47.903984+00:00",
   "heat_score": {
     "score": 45,
     "regime": "Elevated"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "102.26",
+      "value": "102.43",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "100.35",
+      "value": "100.31",
       "unit": "",
       "trend": "rising",
       "status": "live",
