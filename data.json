@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T20:00:45.099390+00:00",
+  "generated_at": "2026-09-18T21:00:48.777036+00:00",
   "heat_score": {
     "score": 40,
     "regime": "Elevated"
@@ -24,10 +24,10 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "14.9",
+      "value": "14.81",
       "unit": "",
       "trend": "falling",
-      "change_pct": -3.5,
+      "change_pct": -4.08,
       "status": "live",
       "date": "2026-09-18",
       "source": "CBOE"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "95.6",
+      "value": "95.36",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "100.2",
+      "value": "100.21",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -79,18 +79,18 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.74",
+      "value": "4.67",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-18",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "5.01",
+      "value": "4.94",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-18",
       "source": "FRED"
