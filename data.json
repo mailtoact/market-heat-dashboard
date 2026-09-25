@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T14:00:46.291685+00:00",
+  "generated_at": "2026-09-25T15:00:52.044351+00:00",
   "heat_score": {
-    "score": 39,
+    "score": 44,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 51.7% above 50MA with an A/D ratio of 0.81x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.61x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,28 +24,28 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.23",
+      "value": "15.68",
       "unit": "",
-      "trend": "falling",
-      "change_pct": -2.81,
+      "trend": "rising",
+      "change_pct": 0.06,
       "status": "live",
       "date": "2026-09-25",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.81",
+      "value": "0.61",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-25",
-      "source": "S&P Sample (13:16)"
+      "source": "S&P Sample (11:18)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "51.7",
+      "value": "48.3",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-25",
       "source": "S&P 500"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "93.39",
+      "value": "93.93",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "100.92",
+      "value": "100.97",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -106,7 +106,7 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "2.73",
+      "value": "2.8",
       "unit": "%",
       "trend": "rising",
       "status": "live",
