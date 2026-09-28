@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T14:00:50.166644+00:00",
+  "generated_at": "2026-09-28T15:00:51.898691+00:00",
   "heat_score": {
-    "score": 40,
+    "score": 49,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 51.7% above 50MA with an A/D ratio of 0.81x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.45x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,28 +24,28 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "16.05",
+      "value": "16.35",
       "unit": "",
       "trend": "rising",
-      "change_pct": 7.94,
+      "change_pct": 9.95,
       "status": "live",
       "date": "2026-09-28",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.81",
+      "value": "0.45",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-28",
-      "source": "S&P Sample (13:16)"
+      "source": "S&P Sample (9:20)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "51.7",
+      "value": "48.3",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-28",
       "source": "S&P 500"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "94.15",
+      "value": "94.85",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.16",
+      "value": "101.25",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -106,7 +106,7 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "2.8",
+      "value": "2.93",
       "unit": "%",
       "trend": "rising",
       "status": "live",
