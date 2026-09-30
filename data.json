@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T20:00:40.478831+00:00",
+  "generated_at": "2026-09-30T21:00:45.008356+00:00",
   "heat_score": {
-    "score": 47,
+    "score": 49,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 44.8% above 50MA with an A/D ratio of 0.61x.",
+    "narrative": "Market participation stands at 44.8% above 50MA with an A/D ratio of 0.53x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "16.19",
+      "value": "16.34",
       "unit": "",
       "trend": "rising",
-      "change_pct": 0.94,
+      "change_pct": 1.87,
       "status": "live",
       "date": "2026-09-30",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.61",
+      "value": "0.53",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-30",
-      "source": "S&P Sample (11:18)"
+      "source": "S&P Sample (10:19)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "90.45",
+      "value": "90.35",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.49",
+      "value": "101.47",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -79,16 +79,16 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.92",
+      "value": "4.89",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-09-30",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "5.24",
+      "value": "5.26",
       "unit": "%",
       "trend": "rising",
       "status": "live",
