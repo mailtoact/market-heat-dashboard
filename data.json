@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T14:00:49.518789+00:00",
+  "generated_at": "2026-09-30T15:00:44.409507+00:00",
   "heat_score": {
-    "score": 43,
+    "score": 40,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.71x.",
+    "narrative": "Market participation stands at 51.7% above 50MA with an A/D ratio of 0.81x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,28 +24,28 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.77",
+      "value": "15.92",
       "unit": "",
       "trend": "falling",
-      "change_pct": -1.68,
+      "change_pct": -0.75,
       "status": "live",
       "date": "2026-09-30",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.71",
+      "value": "0.81",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-09-30",
-      "source": "S&P Sample (12:17)"
+      "source": "S&P Sample (13:16)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "48.3",
+      "value": "51.7",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-09-30",
       "source": "S&P 500"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "91.0",
+      "value": "91.34",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.2",
+      "value": "101.23",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -106,7 +106,7 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.02",
+      "value": "3.08",
       "unit": "%",
       "trend": "rising",
       "status": "live",
