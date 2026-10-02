@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T21:00:41.253959+00:00",
+  "generated_at": "2026-10-02T22:00:43.557885+00:00",
   "heat_score": {
     "score": 26,
     "regime": "Low Heat"
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.94",
+      "value": "101.92",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -97,9 +97,9 @@
     },
     "spread_10y2y": {
       "label": "10Y-2Y Spread",
-      "value": "0.46",
+      "value": "0.45",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-02",
       "source": "FRED"
