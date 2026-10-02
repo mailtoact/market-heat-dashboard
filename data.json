@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-02T13:00:41.597184+00:00",
+  "generated_at": "2026-10-02T14:00:42.805311+00:00",
   "heat_score": {
-    "score": 41,
-    "regime": "Elevated"
+    "score": 34,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,36 +10,36 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 41.4% above 50MA with an A/D ratio of 0.93x.",
+    "narrative": "Market participation stands at 41.4% above 50MA with an A/D ratio of 1.64x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.54",
+      "value": "15.68",
       "unit": "",
       "trend": "falling",
-      "change_pct": -5.19,
+      "change_pct": -4.33,
       "status": "live",
       "date": "2026-10-02",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.93",
+      "value": "1.64",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-02",
-      "source": "S&P Sample (14:15)"
+      "source": "S&P Sample (18:11)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "69.0",
+      "value": "72.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "89.44",
+      "value": "89.87",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.85",
+      "value": "101.79",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -115,18 +115,18 @@
     },
     "unemployment": {
       "label": "Unemployment",
-      "value": "4.1",
+      "value": "4.2",
       "unit": "%",
-      "trend": "flat",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-02",
       "source": "BLS"
     },
     "sahm_rule": {
       "label": "Sahm Rule Indicator",
-      "value": "-0.07",
+      "value": "0.0",
       "unit": "pp",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-02",
       "source": "FRED"
