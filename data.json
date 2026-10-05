@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T14:00:53.514265+00:00",
+  "generated_at": "2026-10-05T15:00:44.002156+00:00",
   "heat_score": {
-    "score": 44,
+    "score": 38,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 44.8% above 50MA with an A/D ratio of 0.71x.",
+    "narrative": "Market participation stands at 41.4% above 50MA with an A/D ratio of 1.23x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.89",
+      "value": "15.52",
       "unit": "",
       "trend": "rising",
-      "change_pct": 3.79,
+      "change_pct": 1.37,
       "status": "live",
       "date": "2026-10-05",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.71",
+      "value": "1.23",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-05",
-      "source": "S&P Sample (12:17)"
+      "source": "S&P Sample (16:13)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "44.8",
+      "value": "41.4",
       "unit": "%",
       "trend": "falling",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "89.76",
+      "value": "90.37",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.34",
+      "value": "102.24",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.24",
+      "value": "3.1",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-05",
       "source": "FRED"
