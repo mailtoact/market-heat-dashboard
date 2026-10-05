@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:11:10.533300+00:00",
+  "generated_at": "2026-10-05T22:00:44.285546+00:00",
   "heat_score": {
     "score": 29,
     "regime": "Low Heat"
@@ -97,9 +97,9 @@
     },
     "spread_10y2y": {
       "label": "10Y-2Y Spread",
-      "value": "0.45",
+      "value": "0.47",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-05",
       "source": "FRED"
