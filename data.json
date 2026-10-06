@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T14:00:41.978590+00:00",
+  "generated_at": "2026-10-06T15:00:47.248449+00:00",
   "heat_score": {
     "score": 24,
     "regime": "Low Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 51.7% above 50MA with an A/D ratio of 2.62x.",
+    "narrative": "Market participation stands at 51.7% above 50MA with an A/D ratio of 3.14x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.4",
+      "value": "15.43",
       "unit": "",
       "trend": "falling",
-      "change_pct": -0.77,
+      "change_pct": -0.58,
       "status": "live",
       "date": "2026-10-06",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "2.62",
+      "value": "3.14",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-06",
-      "source": "S&P Sample (21:8)"
+      "source": "S&P Sample (22:7)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "87.73",
+      "value": "87.78",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.93",
+      "value": "101.89",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.1",
+      "value": "3.12",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-06",
       "source": "FRED"
