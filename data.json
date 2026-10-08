@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-08T10:00:45.462680+00:00",
+  "generated_at": "2026-10-08T11:00:45.269563+00:00",
   "heat_score": {
-    "score": 34,
-    "regime": "Low Heat"
+    "score": 35,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -12,22 +12,22 @@
   "interpretation": {
     "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.93x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.71",
+      "value": "15.97",
       "unit": "",
       "trend": "rising",
-      "change_pct": 4.18,
+      "change_pct": 5.9,
       "status": "live",
       "date": "2026-10-08",
       "source": "CBOE"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "91.91",
+      "value": "92.8",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.39",
+      "value": "102.37",
       "unit": "",
       "trend": "rising",
       "status": "live",
