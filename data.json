@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T14:00:54.805482+00:00",
+  "generated_at": "2026-10-08T15:00:51.551746+00:00",
   "heat_score": {
-    "score": 29,
+    "score": 31,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 1.23x.",
+    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 1.07x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "15.52",
+      "value": "15.28",
       "unit": "",
       "trend": "rising",
-      "change_pct": 2.92,
+      "change_pct": 1.33,
       "status": "live",
       "date": "2026-10-08",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.23",
+      "value": "1.07",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-08",
-      "source": "S&P Sample (16:13)"
+      "source": "S&P Sample (15:14)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "92.2",
+      "value": "92.52",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,9 +70,9 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.25",
+      "value": "102.13",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-08",
       "source": "ICE"
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.03",
+      "value": "3.09",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-08",
       "source": "FRED"
