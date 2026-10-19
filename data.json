@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-19T19:18:19.194547+00:00",
+  "generated_at": "2026-10-19T20:00:47.373034+00:00",
   "heat_score": {
-    "score": 34,
-    "regime": "Low Heat"
+    "score": 40,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 1.07x.",
+    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.81x.",
     "portfolio_guidance": {
-      "stance": "BULLISH / ACCUMULATE",
-      "equities": "Overweight Broad Equities & Growth",
-      "gold": "Hold Core Strategic Allocation",
-      "btc": "Overweight / Risk-On Tilt",
-      "bonds": "Neutral / Short Duration Yield",
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
       "tips": "Underweight",
-      "cash": "Deploy Excess Cash (5% Minimum)"
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "18.22",
+      "value": "18.26",
       "unit": "",
       "trend": "falling",
-      "change_pct": -8.85,
+      "change_pct": -8.65,
       "status": "live",
       "date": "2026-10-19",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.07",
+      "value": "0.81",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-19",
-      "source": "S&P Sample (15:14)"
+      "source": "S&P Sample (13:16)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "69.0",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "98.39",
+      "value": "98.43",
       "unit": "$",
       "trend": "falling",
       "status": "live",
