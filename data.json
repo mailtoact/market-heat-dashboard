@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T10:00:43.476155+00:00",
+  "generated_at": "2026-10-21T11:00:50.985122+00:00",
   "heat_score": {
-    "score": 22,
+    "score": 21,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 2.22x.",
+    "narrative": "Market participation stands at 71.4% above 50MA with an A/D ratio of 2.5x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "17.38",
+      "value": "17.39",
       "unit": "",
       "trend": "rising",
-      "change_pct": 0.4,
+      "change_pct": 0.46,
       "status": "live",
       "date": "2026-10-21",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "2.22",
+      "value": "2.5",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-21",
-      "source": "S&P Sample (20:9)"
+      "source": "S&P Sample (20:8)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "72.4",
+      "value": "71.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "75.9",
+      "value": "75.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "99.51",
+      "value": "99.95",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,9 +70,9 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.76",
+      "value": "101.73",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-21",
       "source": "ICE"
