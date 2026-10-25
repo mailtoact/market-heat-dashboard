@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T18:00:44.361119+00:00",
+  "generated_at": "2026-10-25T19:00:14.765433+00:00",
   "heat_score": {
-    "score": 53,
+    "score": 52,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 60.7% above 50MA with an A/D ratio of 0.27x.",
+    "narrative": "Market participation stands at 62.1% above 50MA with an A/D ratio of 0.26x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -34,16 +34,16 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.27",
+      "value": "0.26",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-10-25",
-      "source": "S&P Sample (6:22)"
+      "source": "S&P Sample (6:23)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "60.7",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "78.6",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
