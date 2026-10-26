@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T20:00:47.892882+00:00",
+  "generated_at": "2026-10-26T21:00:48.561174+00:00",
   "heat_score": {
-    "score": 32,
+    "score": 33,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.15x.",
+    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.07x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "18.33",
+      "value": "18.39",
       "unit": "",
       "trend": "falling",
-      "change_pct": -5.76,
+      "change_pct": -5.45,
       "status": "live",
       "date": "2026-10-26",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.15",
+      "value": "1.07",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-26",
-      "source": "S&P Sample (15:13)"
+      "source": "S&P Sample (15:14)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "101.8",
+      "value": "101.29",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.99",
+      "value": "102.02",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -79,18 +79,18 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.65",
+      "value": "4.69",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-26",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "4.96",
+      "value": "5.0",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-10-26",
       "source": "FRED"
