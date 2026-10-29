@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:00:45.686794+00:00",
+  "generated_at": "2026-10-29T15:00:49.910256+00:00",
   "heat_score": {
     "score": 17,
     "regime": "Low Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 79.3% above 50MA with an A/D ratio of 3.14x.",
+    "narrative": "Market participation stands at 75.9% above 50MA with an A/D ratio of 2.62x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "16.95",
+      "value": "16.52",
       "unit": "",
-      "trend": "rising",
-      "change_pct": 0.24,
+      "trend": "falling",
+      "change_pct": -2.31,
       "status": "live",
       "date": "2026-10-29",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.14",
+      "value": "2.62",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-29",
-      "source": "S&P Sample (22:7)"
+      "source": "S&P Sample (21:8)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "79.3",
+      "value": "75.9",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "99.96",
+      "value": "100.24",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,9 +70,9 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.25",
+      "value": "102.05",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-10-29",
       "source": "ICE"
@@ -106,7 +106,7 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.18",
+      "value": "3.14",
       "unit": "%",
       "trend": "falling",
       "status": "live",
