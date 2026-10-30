@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-30T15:53:00.836501+00:00",
+  "generated_at": "2026-10-30T16:00:51.505095+00:00",
   "heat_score": {
-    "score": 36,
-    "regime": "Elevated"
+    "score": 34,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.07x.",
+    "narrative": "Market participation stands at 71.4% above 50MA with an A/D ratio of 1.33x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "19.67",
+      "value": "20.15",
       "unit": "",
       "trend": "rising",
-      "change_pct": 14.36,
+      "change_pct": 17.15,
       "status": "live",
       "date": "2026-10-30",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.07",
+      "value": "1.33",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-10-30",
-      "source": "S&P Sample (15:14)"
+      "source": "S&P Sample (16:12)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "72.4",
+      "value": "71.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "75.9",
+      "value": "75.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "104.05",
+      "value": "104.07",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.92",
+      "value": "101.91",
       "unit": "",
       "trend": "falling",
       "status": "live",
