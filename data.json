@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T06:00:45.609846+00:00",
+  "generated_at": "2026-11-01T07:00:43.414150+00:00",
   "heat_score": {
     "score": 35,
     "regime": "Elevated"
@@ -79,7 +79,7 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.61",
+      "value": "4.15",
       "unit": "%",
       "trend": "falling",
       "status": "live",
@@ -88,16 +88,16 @@
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "4.98",
+      "value": "4.22",
       "unit": "%",
-      "trend": "falling",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-01",
       "source": "FRED"
     },
     "spread_10y2y": {
       "label": "10Y-2Y Spread",
-      "value": "0.38",
+      "value": "0.07",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -106,27 +106,27 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.26",
+      "value": "3.25",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-01",
       "source": "FRED"
     },
     "unemployment": {
       "label": "Unemployment",
-      "value": "4.2",
+      "value": "4.1",
       "unit": "%",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-01",
       "source": "BLS"
     },
     "sahm_rule": {
       "label": "Sahm Rule Indicator",
-      "value": "0.0",
+      "value": "0.33",
       "unit": "pp",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-01",
       "source": "FRED"
