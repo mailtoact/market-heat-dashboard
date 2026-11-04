@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T16:00:44.392237+00:00",
+  "generated_at": "2026-11-04T17:00:51.139022+00:00",
   "heat_score": {
     "score": 19,
     "regime": "Low Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 78.6% above 50MA with an A/D ratio of 2.5x.",
+    "narrative": "Market participation stands at 75.0% above 50MA with an A/D ratio of 4.6x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "17.46",
+      "value": "17.39",
       "unit": "",
       "trend": "falling",
-      "change_pct": -16.18,
+      "change_pct": -16.51,
       "status": "live",
       "date": "2026-11-04",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "2.5",
+      "value": "4.6",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-04",
-      "source": "S&P Sample (20:8)"
+      "source": "S&P Sample (23:5)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "78.6",
+      "value": "75.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "93.54",
+      "value": "89.29",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.51",
+      "value": "101.62",
       "unit": "",
       "trend": "falling",
       "status": "live",
