@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-06T19:00:52.499578+00:00",
+  "generated_at": "2026-11-06T21:00:52.295220+00:00",
   "heat_score": {
-    "score": 40,
-    "regime": "Elevated"
+    "score": 56,
+    "regime": "High Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,36 +10,36 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 1.9x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
-      "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "stance": "CAUTIOUS / HEDGE RISKS",
+      "equities": "Neutral / Selective Quality",
+      "gold": "Accumulate on Dips",
+      "btc": "Tactical / Reduced Sizing",
+      "bonds": "Overweight Intermediate Duration",
+      "tips": "Neutral",
+      "cash": "Raise Cash (10-15% Buffer)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "24.57",
+      "value": "24.81",
       "unit": "",
       "trend": "falling",
-      "change_pct": -12.81,
+      "change_pct": -11.96,
       "status": "live",
       "date": "2026-11-06",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.9",
+      "value": "0.53",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-06",
-      "source": "S&P Sample (19:10)"
+      "source": "S&P Sample (10:19)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,16 +61,16 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "90.02",
+      "value": "90.77",
       "unit": "$",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-06",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.24",
+      "value": "102.32",
       "unit": "",
       "trend": "rising",
       "status": "live",
