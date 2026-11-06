@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T15:00:52.903238+00:00",
+  "generated_at": "2026-11-06T15:53:27.779070+00:00",
   "heat_score": {
-    "score": 52,
+    "score": 45,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.71x.",
+    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 1.23x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "24.33",
+      "value": "25.26",
       "unit": "",
       "trend": "falling",
-      "change_pct": -13.66,
+      "change_pct": -10.36,
       "status": "live",
       "date": "2026-11-06",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.71",
+      "value": "1.23",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-06",
-      "source": "S&P Sample (12:17)"
+      "source": "S&P Sample (16:13)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "69.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,16 +61,16 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "90.81",
+      "value": "90.17",
       "unit": "$",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-06",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.22",
+      "value": "102.18",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -106,18 +106,18 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.32",
+      "value": "3.48",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-06",
       "source": "FRED"
     },
     "unemployment": {
       "label": "Unemployment",
-      "value": "4.2",
+      "value": "4.1",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-06",
       "source": "BLS"
@@ -126,7 +126,7 @@
       "label": "Sahm Rule Indicator",
       "value": "0.0",
       "unit": "pp",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-06",
       "source": "FRED"
