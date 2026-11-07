@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:00:52.342451+00:00",
+  "generated_at": "2026-11-07T01:53:44.111975+00:00",
   "heat_score": {
     "score": 62,
     "regime": "High Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.12x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.38x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -34,12 +34,12 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.12",
+      "value": "0.38",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-11-07",
-      "source": "S&P Sample (3:26)"
+      "source": "S&P Sample (8:21)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "69.0",
+      "value": "72.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
