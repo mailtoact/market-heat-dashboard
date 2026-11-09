@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-09T14:00:50.031452+00:00",
+  "generated_at": "2026-11-09T15:00:51.433224+00:00",
   "heat_score": {
-    "score": 54,
-    "regime": "Elevated"
+    "score": 34,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
+    "narrative": "Market participation stands at 69.0% above 50MA with an A/D ratio of 1.9x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
       "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "23.23",
+      "value": "21.89",
       "unit": "",
       "trend": "falling",
-      "change_pct": -9.4,
+      "change_pct": -14.63,
       "status": "live",
       "date": "2026-11-09",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.53",
+      "value": "1.9",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-09",
-      "source": "S&P Sample (10:19)"
+      "source": "S&P Sample (19:10)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "69.0",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "72.4",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "86.76",
+      "value": "87.51",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "101.85",
+      "value": "101.9",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.48",
+      "value": "3.42",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-09",
       "source": "FRED"
