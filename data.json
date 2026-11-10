@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T21:00:51.278946+00:00",
+  "generated_at": "2026-11-10T22:00:56.264138+00:00",
   "heat_score": {
-    "score": 32,
+    "score": 34,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.42x.",
+    "narrative": "Market participation stands at 72.4% above 50MA with an A/D ratio of 1.23x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "19.81",
+      "value": "19.46",
       "unit": "",
       "trend": "falling",
-      "change_pct": -0.55,
+      "change_pct": -2.31,
       "status": "live",
       "date": "2026-11-10",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.42",
+      "value": "1.23",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-10",
-      "source": "S&P Sample (17:12)"
+      "source": "S&P Sample (16:13)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "86.35",
+      "value": "86.47",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "102.24",
+      "value": "102.25",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -79,7 +79,7 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.51",
+      "value": "4.56",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -88,7 +88,7 @@
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "4.86",
+      "value": "4.88",
       "unit": "%",
       "trend": "rising",
       "status": "live",
