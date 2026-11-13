@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T15:00:49.699880+00:00",
+  "generated_at": "2026-11-13T16:00:48.169048+00:00",
   "heat_score": {
-    "score": 23,
+    "score": 27,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 78.6% above 50MA with an A/D ratio of 2.11x.",
+    "narrative": "Market participation stands at 79.3% above 50MA with an A/D ratio of 1.9x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "18.87",
+      "value": "20.36",
       "unit": "",
       "trend": "rising",
-      "change_pct": 0.91,
+      "change_pct": 8.88,
       "status": "live",
       "date": "2026-11-13",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "2.11",
+      "value": "1.9",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-13",
-      "source": "S&P Sample (19:9)"
+      "source": "S&P Sample (19:10)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "78.6",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "82.1",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,18 +61,18 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "89.35",
+      "value": "88.72",
       "unit": "$",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-13",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.13",
+      "value": "103.36",
       "unit": "",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-13",
       "source": "ICE"
@@ -106,7 +106,7 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.3",
+      "value": "3.2",
       "unit": "%",
       "trend": "falling",
       "status": "live",
