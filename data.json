@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T23:29:55.944369+00:00",
+  "generated_at": "2026-11-14T00:00:46.664631+00:00",
   "heat_score": {
-    "score": 21,
+    "score": 20,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 78.6% above 50MA with an A/D ratio of 3.0x.",
+    "narrative": "Market participation stands at 82.1% above 50MA with an A/D ratio of 3.67x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -29,25 +29,25 @@
       "trend": "rising",
       "change_pct": 3.21,
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.0",
+      "value": "3.67",
       "unit": "x",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
-      "source": "S&P Sample (21:7)"
+      "date": "2026-11-14",
+      "source": "S&P Sample (22:6)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "78.6",
+      "value": "82.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "S&P 500"
     },
     "breadth_200sma": {
@@ -56,7 +56,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "S&P 500"
     },
     "wti": {
@@ -65,7 +65,7 @@
       "unit": "$",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "NYMEX"
     },
     "dxy": {
@@ -74,7 +74,7 @@
       "unit": "",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "ICE"
     },
     "y2": {
@@ -83,7 +83,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "FRED"
     },
     "y10": {
@@ -92,7 +92,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "FRED"
     },
     "spread_10y2y": {
@@ -101,7 +101,7 @@
       "unit": "%",
       "trend": "rising",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "FRED"
     },
     "hy_spread": {
@@ -110,7 +110,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "FRED"
     },
     "unemployment": {
@@ -119,7 +119,7 @@
       "unit": "%",
       "trend": "falling",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "BLS"
     },
     "sahm_rule": {
@@ -128,7 +128,7 @@
       "unit": "pp",
       "trend": "flat",
       "status": "live",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "FRED"
     }
   }
