@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T08:00:44.418215+00:00",
+  "generated_at": "2026-11-16T09:00:50.774003+00:00",
   "heat_score": {
-    "score": 21,
+    "score": 22,
     "regime": "Low Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 78.6% above 50MA with an A/D ratio of 3.0x.",
+    "narrative": "Market participation stands at 79.3% above 50MA with an A/D ratio of 3.14x.",
     "portfolio_guidance": {
       "stance": "BULLISH / ACCUMULATE",
       "equities": "Overweight Broad Equities & Growth",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "19.3",
+      "value": "19.91",
       "unit": "",
       "trend": "rising",
-      "change_pct": 3.21,
+      "change_pct": 3.16,
       "status": "live",
       "date": "2026-11-16",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.0",
+      "value": "3.14",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-16",
-      "source": "S&P Sample (21:7)"
+      "source": "S&P Sample (22:7)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "78.6",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "82.1",
+      "value": "82.8",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,18 +61,18 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "88.73",
+      "value": "88.5",
       "unit": "$",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-16",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.41",
+      "value": "103.36",
       "unit": "",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-16",
       "source": "ICE"
