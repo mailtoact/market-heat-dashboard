@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:00:46.997545+00:00",
+  "generated_at": "2026-11-16T22:00:47.153386+00:00",
   "heat_score": {
     "score": 55,
     "regime": "High Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.53x.",
+    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.45x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -24,22 +24,22 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "23.95",
+      "value": "22.91",
       "unit": "",
       "trend": "rising",
-      "change_pct": 24.09,
+      "change_pct": 18.7,
       "status": "live",
       "date": "2026-11-16",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.53",
+      "value": "0.45",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-11-16",
-      "source": "S&P Sample (10:19)"
+      "source": "S&P Sample (9:20)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.56",
+      "value": "85.14",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -79,7 +79,7 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.86",
+      "value": "4.88",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -88,7 +88,7 @@
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "5.1",
+      "value": "5.15",
       "unit": "%",
       "trend": "rising",
       "status": "live",
