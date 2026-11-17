@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T00:00:53.816061+00:00",
+  "generated_at": "2026-11-17T01:00:43.346942+00:00",
   "heat_score": {
-    "score": 55,
-    "regime": "High Heat"
+    "score": 28,
+    "regime": "Low Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.45x.",
+    "narrative": "Market participation stands at 78.6% above 50MA with an A/D ratio of 3.0x.",
     "portfolio_guidance": {
-      "stance": "CAUTIOUS / HEDGE RISKS",
-      "equities": "Neutral / Selective Quality",
-      "gold": "Accumulate on Dips",
-      "btc": "Tactical / Reduced Sizing",
-      "bonds": "Overweight Intermediate Duration",
-      "tips": "Neutral",
-      "cash": "Raise Cash (10-15% Buffer)"
+      "stance": "BULLISH / ACCUMULATE",
+      "equities": "Overweight Broad Equities & Growth",
+      "gold": "Hold Core Strategic Allocation",
+      "btc": "Overweight / Risk-On Tilt",
+      "bonds": "Neutral / Short Duration Yield",
+      "tips": "Underweight",
+      "cash": "Deploy Excess Cash (5% Minimum)"
     }
   },
   "indicators": {
@@ -34,16 +34,16 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.45",
+      "value": "3.0",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-17",
-      "source": "S&P Sample (9:20)"
+      "source": "S&P Sample (21:7)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "78.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "75.9",
+      "value": "82.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.28",
+      "value": "85.29",
       "unit": "$",
       "trend": "falling",
       "status": "live",
