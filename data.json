@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T19:00:45.724580+00:00",
+  "generated_at": "2026-11-17T20:00:45.945160+00:00",
   "heat_score": {
-    "score": 63,
+    "score": 67,
     "regime": "High Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 65.5% above 50MA with an A/D ratio of 0.16x.",
+    "narrative": "Market participation stands at 57.1% above 50MA with an A/D ratio of 0.04x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "25.77",
+      "value": "26.23",
       "unit": "",
       "trend": "rising",
-      "change_pct": 12.48,
+      "change_pct": 14.49,
       "status": "live",
       "date": "2026-11-17",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.16",
+      "value": "0.04",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-11-17",
-      "source": "S&P Sample (4:25)"
+      "source": "S&P Sample (1:27)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "65.5",
+      "value": "57.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "72.4",
+      "value": "71.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,16 +61,16 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "86.56",
+      "value": "85.72",
       "unit": "$",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-17",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.43",
+      "value": "103.47",
       "unit": "",
       "trend": "falling",
       "status": "live",
