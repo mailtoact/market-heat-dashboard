@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T22:00:46.089232+00:00",
+  "generated_at": "2026-11-19T23:00:48.158484+00:00",
   "heat_score": {
     "score": 74,
     "regime": "High Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.04x.",
+    "narrative": "Market participation stands at 46.4% above 50MA with an A/D ratio of 0.04x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -39,11 +39,11 @@
       "trend": "falling",
       "status": "live",
       "date": "2026-11-19",
-      "source": "S&P Sample (1:28)"
+      "source": "S&P Sample (1:27)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "48.3",
+      "value": "46.4",
       "unit": "%",
       "trend": "falling",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "65.5",
+      "value": "64.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "83.12",
+      "value": "83.16",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.93",
+      "value": "103.94",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -97,9 +97,9 @@
     },
     "spread_10y2y": {
       "label": "10Y-2Y Spread",
-      "value": "0.27",
+      "value": "0.28",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-19",
       "source": "FRED"
