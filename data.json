@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:00:48.540112+00:00",
+  "generated_at": "2026-11-20T22:00:46.406456+00:00",
   "heat_score": {
     "score": 74,
     "regime": "High Heat"
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 46.4% above 50MA with an A/D ratio of 1.0x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.93x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "38.26",
+      "value": "35.89",
       "unit": "",
       "trend": "rising",
-      "change_pct": 34.53,
+      "change_pct": 26.2,
       "status": "live",
       "date": "2026-11-20",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.0",
+      "value": "0.93",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-20",
-      "source": "S&P Sample (14:14)"
+      "source": "S&P Sample (14:15)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "46.4",
+      "value": "48.3",
       "unit": "%",
       "trend": "falling",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "60.7",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "83.96",
+      "value": "83.56",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.87",
+      "value": "103.88",
       "unit": "",
       "trend": "falling",
       "status": "live",
@@ -79,16 +79,16 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.8",
+      "value": "4.76",
       "unit": "%",
-      "trend": "flat",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-20",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "5.07",
+      "value": "5.04",
       "unit": "%",
       "trend": "falling",
       "status": "live",
