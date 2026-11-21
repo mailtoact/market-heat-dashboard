@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T02:00:44.681684+00:00",
+  "generated_at": "2026-11-21T03:00:49.770277+00:00",
   "heat_score": {
-    "score": 86,
-    "regime": "Stress"
+    "score": 74,
+    "regime": "High Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 46.4% above 50MA with an A/D ratio of 0.04x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.93x.",
     "portfolio_guidance": {
-      "stance": "DEFENSIVE / CAPITAL PRESERVATION",
-      "equities": "Underweight (Focus on Low Beta / Defensive)",
-      "gold": "Overweight (Hedge Volatility)",
-      "btc": "Underweight / Cash Neutral",
-      "bonds": "Overweight Long Duration",
+      "stance": "CAUTIOUS / HEDGE RISKS",
+      "equities": "Neutral / Selective Quality",
+      "gold": "Accumulate on Dips",
+      "btc": "Tactical / Reduced Sizing",
+      "bonds": "Overweight Intermediate Duration",
       "tips": "Neutral",
-      "cash": "Elevated (15-20% Buffer)"
+      "cash": "Raise Cash (10-15% Buffer)"
     }
   },
   "indicators": {
@@ -34,16 +34,16 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.04",
+      "value": "0.93",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-11-21",
-      "source": "S&P Sample (1:27)"
+      "source": "S&P Sample (14:15)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "46.4",
+      "value": "48.3",
       "unit": "%",
       "trend": "falling",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "64.3",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
