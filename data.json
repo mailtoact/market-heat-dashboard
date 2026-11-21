@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T01:00:47.302271+00:00",
+  "generated_at": "2026-11-21T01:27:45.799221+00:00",
   "heat_score": {
-    "score": 86,
+    "score": 85,
     "regime": "Stress"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.04x.",
+    "narrative": "Market participation stands at 50.0% above 50MA with an A/D ratio of 0.04x.",
     "portfolio_guidance": {
       "stance": "DEFENSIVE / CAPITAL PRESERVATION",
       "equities": "Underweight (Focus on Low Beta / Defensive)",
@@ -39,20 +39,20 @@
       "trend": "falling",
       "status": "live",
       "date": "2026-11-21",
-      "source": "S&P Sample (1:28)"
+      "source": "S&P Sample (1:27)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "48.3",
+      "value": "50.0",
       "unit": "%",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-21",
       "source": "S&P 500"
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "65.5",
+      "value": "67.9",
       "unit": "%",
       "trend": "rising",
       "status": "live",
