@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T08:00:47.589868+00:00",
+  "generated_at": "2026-11-23T09:00:48.093710+00:00",
   "heat_score": {
-    "score": 74,
+    "score": 67,
     "regime": "High Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 50.0% above 50MA with an A/D ratio of 0.87x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.93x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -24,35 +24,35 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "35.89",
+      "value": "31.09",
       "unit": "",
-      "trend": "rising",
-      "change_pct": 26.2,
+      "trend": "falling",
+      "change_pct": -13.37,
       "status": "live",
       "date": "2026-11-23",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.87",
+      "value": "0.93",
       "unit": "x",
       "trend": "falling",
       "status": "live",
       "date": "2026-11-23",
-      "source": "S&P Sample (13:15)"
+      "source": "S&P Sample (14:15)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "50.0",
+      "value": "48.3",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-23",
       "source": "S&P 500"
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "64.3",
+      "value": "62.1",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "82.98",
+      "value": "82.64",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.6",
+      "value": "103.66",
       "unit": "",
       "trend": "falling",
       "status": "live",
