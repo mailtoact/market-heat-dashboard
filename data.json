@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T00:00:50.140164+00:00",
+  "generated_at": "2026-11-24T01:00:40.666395+00:00",
   "heat_score": {
-    "score": 42,
-    "regime": "Elevated"
+    "score": 60,
+    "regime": "High Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -10,15 +10,15 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 57.1% above 50MA with an A/D ratio of 3.0x.",
+    "narrative": "Market participation stands at 46.4% above 50MA with an A/D ratio of 0.87x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
-      "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "stance": "CAUTIOUS / HEDGE RISKS",
+      "equities": "Neutral / Selective Quality",
+      "gold": "Accumulate on Dips",
+      "btc": "Tactical / Reduced Sizing",
+      "bonds": "Overweight Intermediate Duration",
+      "tips": "Neutral",
+      "cash": "Raise Cash (10-15% Buffer)"
     }
   },
   "indicators": {
@@ -34,25 +34,25 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.0",
+      "value": "0.87",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-24",
-      "source": "S&P Sample (21:7)"
+      "source": "S&P Sample (13:15)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "57.1",
+      "value": "46.4",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-24",
       "source": "S&P 500"
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "67.9",
+      "value": "60.7",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "80.39",
+      "value": "80.37",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "104.32",
+      "value": "104.3",
       "unit": "",
       "trend": "rising",
       "status": "live",
