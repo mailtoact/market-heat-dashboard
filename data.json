@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T20:00:48.911593+00:00",
+  "generated_at": "2026-11-25T21:00:51.607068+00:00",
   "heat_score": {
-    "score": 57,
+    "score": 60,
     "regime": "High Heat"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 53.6% above 50MA with an A/D ratio of 1.15x.",
+    "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 0.93x.",
     "portfolio_guidance": {
       "stance": "CAUTIOUS / HEDGE RISKS",
       "equities": "Neutral / Selective Quality",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "28.14",
+      "value": "28.43",
       "unit": "",
       "trend": "rising",
-      "change_pct": 6.75,
+      "change_pct": 7.85,
       "status": "live",
       "date": "2026-11-25",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "1.15",
+      "value": "0.93",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-25",
-      "source": "S&P Sample (15:13)"
+      "source": "S&P Sample (14:15)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "53.6",
+      "value": "55.2",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "67.9",
+      "value": "65.5",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "83.58",
+      "value": "84.1",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.66",
+      "value": "103.69",
       "unit": "",
       "trend": "falling",
       "status": "live",
