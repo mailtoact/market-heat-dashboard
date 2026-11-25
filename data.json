@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-25T14:00:51.729152+00:00",
+  "generated_at": "2026-11-25T15:00:52.376304+00:00",
   "heat_score": {
-    "score": 52,
-    "regime": "Elevated"
+    "score": 85,
+    "regime": "Stress"
   },
   "data_health": {
     "status": "healthy",
@@ -10,49 +10,49 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 3.14x.",
+    "narrative": "Market participation stands at 48.3% above 50MA with an A/D ratio of 0.32x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
-      "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "stance": "DEFENSIVE / CAPITAL PRESERVATION",
+      "equities": "Underweight (Focus on Low Beta / Defensive)",
+      "gold": "Overweight (Hedge Volatility)",
+      "btc": "Underweight / Cash Neutral",
+      "bonds": "Overweight Long Duration",
+      "tips": "Neutral",
+      "cash": "Elevated (15-20% Buffer)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "31.46",
+      "value": "34.75",
       "unit": "",
       "trend": "rising",
-      "change_pct": 19.35,
+      "change_pct": 31.83,
       "status": "live",
       "date": "2026-11-25",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.14",
+      "value": "0.32",
       "unit": "x",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-25",
-      "source": "S&P Sample (22:7)"
+      "source": "S&P Sample (7:22)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "55.2",
+      "value": "48.3",
       "unit": "%",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-25",
       "source": "S&P 500"
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "69.0",
+      "value": "65.5",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "82.64",
+      "value": "83.1",
       "unit": "$",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.95",
+      "value": "103.9",
       "unit": "",
       "trend": "rising",
       "status": "live",
