@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T17:00:46.671615+00:00",
+  "generated_at": "2026-11-27T18:00:49.429390+00:00",
   "heat_score": {
-    "score": 39,
+    "score": 40,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 3.83x.",
+    "narrative": "Market participation stands at 53.6% above 50MA with an A/D ratio of 4.6x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "24.59",
+      "value": "24.72",
       "unit": "",
       "trend": "falling",
-      "change_pct": -8.25,
+      "change_pct": -7.76,
       "status": "live",
       "date": "2026-11-27",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "3.83",
+      "value": "4.6",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-27",
-      "source": "S&P Sample (23:6)"
+      "source": "S&P Sample (23:5)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "55.2",
+      "value": "53.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "79.3",
+      "value": "78.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "82.9",
+      "value": "82.66",
       "unit": "$",
       "trend": "falling",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "104.0",
+      "value": "104.03",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -106,9 +106,9 @@
     },
     "hy_spread": {
       "label": "High Yield Spread",
-      "value": "3.72",
+      "value": "3.77",
       "unit": "%",
-      "trend": "rising",
+      "trend": "flat",
       "status": "live",
       "date": "2026-11-27",
       "source": "FRED"
