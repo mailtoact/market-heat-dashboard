@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-27T14:00:47.810751+00:00",
+  "generated_at": "2026-11-27T15:00:48.079747+00:00",
   "heat_score": {
-    "score": 56,
-    "regime": "High Heat"
+    "score": 47,
+    "regime": "Elevated"
   },
   "data_health": {
     "status": "healthy",
@@ -10,40 +10,40 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 0.81x.",
+    "narrative": "Market participation stands at 53.6% above 50MA with an A/D ratio of 2.11x.",
     "portfolio_guidance": {
-      "stance": "CAUTIOUS / HEDGE RISKS",
-      "equities": "Neutral / Selective Quality",
-      "gold": "Accumulate on Dips",
-      "btc": "Tactical / Reduced Sizing",
-      "bonds": "Overweight Intermediate Duration",
-      "tips": "Neutral",
-      "cash": "Raise Cash (10-15% Buffer)"
+      "stance": "NEUTRAL / TACTICAL",
+      "equities": "Core Allocation (High-Quality Growth)",
+      "gold": "Hold Core Position",
+      "btc": "Tactical Allocation",
+      "bonds": "Neutral Duration",
+      "tips": "Underweight",
+      "cash": "Maintain Standard Buffer (5-10%)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "25.35",
+      "value": "26.89",
       "unit": "",
-      "trend": "falling",
-      "change_pct": -5.41,
+      "trend": "rising",
+      "change_pct": 0.34,
       "status": "live",
       "date": "2026-11-27",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "0.81",
+      "value": "2.11",
       "unit": "x",
-      "trend": "falling",
+      "trend": "rising",
       "status": "live",
       "date": "2026-11-27",
-      "source": "S&P Sample (13:16)"
+      "source": "S&P Sample (19:9)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "55.2",
+      "value": "53.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "65.5",
+      "value": "71.4",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "84.36",
+      "value": "84.0",
       "unit": "$",
       "trend": "rising",
       "status": "live",
