@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-27T11:00:51.334004+00:00",
+  "generated_at": "2026-11-27T12:00:52.637951+00:00",
   "heat_score": {
-    "score": 54,
-    "regime": "Elevated"
+    "score": 56,
+    "regime": "High Heat"
   },
   "data_health": {
     "status": "healthy",
@@ -12,22 +12,22 @@
   "interpretation": {
     "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 0.81x.",
     "portfolio_guidance": {
-      "stance": "NEUTRAL / TACTICAL",
-      "equities": "Core Allocation (High-Quality Growth)",
-      "gold": "Hold Core Position",
-      "btc": "Tactical Allocation",
-      "bonds": "Neutral Duration",
-      "tips": "Underweight",
-      "cash": "Maintain Standard Buffer (5-10%)"
+      "stance": "CAUTIOUS / HEDGE RISKS",
+      "equities": "Neutral / Selective Quality",
+      "gold": "Accumulate on Dips",
+      "btc": "Tactical / Reduced Sizing",
+      "bonds": "Overweight Intermediate Duration",
+      "tips": "Neutral",
+      "cash": "Raise Cash (10-15% Buffer)"
     }
   },
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "24.59",
+      "value": "25.34",
       "unit": "",
       "trend": "falling",
-      "change_pct": -8.25,
+      "change_pct": -5.45,
       "status": "live",
       "date": "2026-11-27",
       "source": "CBOE"
@@ -61,7 +61,7 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "85.57",
+      "value": "85.29",
       "unit": "$",
       "trend": "rising",
       "status": "live",
