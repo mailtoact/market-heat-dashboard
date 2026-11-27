@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T15:00:48.079747+00:00",
+  "generated_at": "2026-11-27T16:00:47.497382+00:00",
   "heat_score": {
-    "score": 47,
+    "score": 40,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 53.6% above 50MA with an A/D ratio of 2.11x.",
+    "narrative": "Market participation stands at 58.6% above 50MA with an A/D ratio of 2.62x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -24,26 +24,26 @@
   "indicators": {
     "vix": {
       "label": "VIX Index",
-      "value": "26.89",
+      "value": "25.41",
       "unit": "",
-      "trend": "rising",
-      "change_pct": 0.34,
+      "trend": "falling",
+      "change_pct": -5.19,
       "status": "live",
       "date": "2026-11-27",
       "source": "CBOE"
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "2.11",
+      "value": "2.62",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-27",
-      "source": "S&P Sample (19:9)"
+      "source": "S&P Sample (21:8)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "53.6",
+      "value": "58.6",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "71.4",
+      "value": "79.3",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -61,16 +61,16 @@
     },
     "wti": {
       "label": "WTI Crude",
-      "value": "84.0",
+      "value": "83.56",
       "unit": "$",
-      "trend": "rising",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-27",
       "source": "NYMEX"
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "103.9",
+      "value": "104.05",
       "unit": "",
       "trend": "rising",
       "status": "live",
