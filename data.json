@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T21:00:51.099500+00:00",
+  "generated_at": "2026-11-27T22:00:45.449016+00:00",
   "heat_score": {
-    "score": 37,
+    "score": 38,
     "regime": "Elevated"
   },
   "data_health": {
@@ -10,7 +10,7 @@
     "total_count": 12
   },
   "interpretation": {
-    "narrative": "Market participation stands at 57.1% above 50MA with an A/D ratio of 4.6x.",
+    "narrative": "Market participation stands at 55.2% above 50MA with an A/D ratio of 4.8x.",
     "portfolio_guidance": {
       "stance": "NEUTRAL / TACTICAL",
       "equities": "Core Allocation (High-Quality Growth)",
@@ -34,16 +34,16 @@
     },
     "ad_ratio": {
       "label": "A/D Ratio",
-      "value": "4.6",
+      "value": "4.8",
       "unit": "x",
       "trend": "rising",
       "status": "live",
       "date": "2026-11-27",
-      "source": "S&P Sample (23:5)"
+      "source": "S&P Sample (24:5)"
     },
     "breadth_50sma": {
       "label": "% Stocks > 50MA",
-      "value": "57.1",
+      "value": "55.2",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -52,7 +52,7 @@
     },
     "breadth_200sma": {
       "label": "% Stocks > 200MA",
-      "value": "75.0",
+      "value": "75.9",
       "unit": "%",
       "trend": "rising",
       "status": "live",
@@ -70,7 +70,7 @@
     },
     "dxy": {
       "label": "US Dollar Index",
-      "value": "104.04",
+      "value": "104.01",
       "unit": "",
       "trend": "rising",
       "status": "live",
@@ -79,16 +79,16 @@
     },
     "y2": {
       "label": "2-Year Treasury",
-      "value": "4.63",
+      "value": "4.61",
       "unit": "%",
-      "trend": "flat",
+      "trend": "falling",
       "status": "live",
       "date": "2026-11-27",
       "source": "FRED"
     },
     "y10": {
       "label": "10-Year Treasury",
-      "value": "4.91",
+      "value": "4.85",
       "unit": "%",
       "trend": "falling",
       "status": "live",
